@@ -1,0 +1,4266 @@
+{
+  "settings": {
+    "engine_mode": "hybrid",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "api_key": "",
+    "temperature": 0.2
+  },
+  "cases": [
+    {
+      "id": "RFP-2026-1101",
+      "title": "Nâng cấp hạ tầng mạng LAN & Wi-Fi 6 trụ sở 3 tầng - Tập đoàn Logistics Đông Nam",
+      "raw_text": "Kính gửi Công ty Thiên Minh,\n\n[Đoạn 1 - Tổng quan] Tập đoàn Logistics Đông Nam đang mở rộng văn phòng điều hành tại Quận 7, TP.HCM (3 tầng, khoảng 180 nhân sự). Chúng tôi cần chào giá trọn gói thiết bị mạng và dịch vụ triển khai hoàn chỉnh.\n\n[Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24 port 10G SFP+ Layer 3 đầy đủ, có nguồn dự phòng kép (Redundant PSU).\n- 12 Access Point Wi-Fi 6 doanh nghiệp (chịu tải tối thiểu 200 user/AP, bắt buộc dùng nguồn PoE và hỗ trợ roaming mượt qua Wireless Controller).\n- 01 bộ Wireless Controller quản lý tập trung.\n\n[Đoạn 3 - Dịch vụ & Bảo trì] Thiên Minh thực hiện khảo sát, lắp đặt rack, cấu hình VLAN tách phòng ban và bàn giao tài liệu As-Built. Yêu cầu gói bảo trì 8x5 phản hồi trong 8 giờ trong vòng 12 tháng.\n\n[Đoạn 4 - Thời hạn, Ngân sách & Điều kiện bắt buộc] Thời hạn hoàn thành bàn giao trong vòng 5 tuần (trước ngày 18/12/2026). Ngân sách dự kiến tối đa 800 triệu VND (chưa VAT). Bắt buộc cung cấp đầy đủ CO/CQ chính hãng cho toàn bộ thiết bị.",
+      "channel": "Email RFP + File đính kèm",
+      "sales_owner": "Nguyễn Minh Tuấn",
+      "received_date": "2026-11-10",
+      "expected_scenario": "Sẵn sàng chuẩn bị chào giá (Đủ thông tin, khớp năng lực/lịch tuần W48-W50, trong thẩm quyền)",
+      "status": "READY_FOR_HITL_REVIEW",
+      "triage_category": "SẴN SÀNG CHUẨN BỊ CHÀO GIÁ",
+      "current_node": "HITL_FINAL_REVIEW",
+      "clarifications": [
+
+      ],
+      "revision_notes": [
+
+      ],
+      "audit_log": [
+        {
+          "at": "2026-11-12T13:15:54+07:00",
+          "type": "CREATED",
+          "message": "Tiếp nhận yêu cầu chào giá RFP-2026-1101 qua Email RFP + File đính kèm."
+        },
+        {
+          "at": "2026-11-12T13:15:54+07:00",
+          "type": "AI_RUN",
+          "message": "AI Agent hoàn tất phân tích. Trạng thái: SẴN SÀNG CHUẨN BỊ CHÀO GIÁ."
+        }
+      ],
+      "created_at": "2026-11-12T13:15:54+07:00",
+      "updated_at": "2026-11-12T13:15:54+07:00",
+      "extracted": {
+        "customer_name": "Tập đoàn Logistics Đông Nam",
+        "location": "Quận 7, TP.HCM | TP.HCM",
+        "scale_summary": "3 tầng, 180 nhân sự",
+        "deadline": {
+          "raw_text": "5 tuần - trước 18/12/2026",
+          "duration_days": 35,
+          "target_date": "2026-12-18"
+        },
+        "budget": {
+          "amount_vnd": 800000000,
+          "vat_excluded": true,
+          "raw_text": "800 triệu VND"
+        },
+        "requested_discount_pct": null,
+        "items": [
+          {
+            "name": "Core Switch 10G SFP+ Layer 3",
+            "category": "Core Switch",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "mandatory_specs": {
+              "ports": 24,
+              "uplink_10g": true,
+              "layer3": true,
+              "redundant_psu": true,
+              "stacking": false
+            },
+            "spec_notes": "- 01 Core Switch 24 port 10G SFP+ Layer 3 đầy đủ, có nguồn dự phòng kép (Redundant PSU).",
+            "source_excerpt": "- 01 Core Switch 24 port 10G SFP+ Layer 3 đầy đủ, có nguồn dự phòng kép (Redundant PSU).",
+            "item_id": "ITEM-1"
+          },
+          {
+            "name": "Switch Access 24-Port PoE+",
+            "category": "Access Switch",
+            "quantity": 4,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "ports": 24,
+              "poe": true,
+              "uplink_10g": true,
+              "layer3": false,
+              "stacking": false
+            },
+            "spec_notes": "- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).",
+            "source_excerpt": "- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).",
+            "item_id": "ITEM-2"
+          },
+          {
+            "name": "Access Point Wi-Fi 6 Enterprise",
+            "category": "Wireless",
+            "quantity": 12,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "high_density_wifi": true,
+              "seamless_roaming": true,
+              "poe": true
+            },
+            "spec_notes": "- 12 Access Point Wi-Fi 6 doanh nghiệp (chịu tải tối thiểu 200 user/AP, bắt buộc dùng nguồn PoE và hỗ trợ roaming mượt qua Wireless Controller).",
+            "source_excerpt": "- 12 Access Point Wi-Fi 6 doanh nghiệp (chịu tải tối thiểu 200 user/AP, bắt buộc dùng nguồn PoE và hỗ trợ roaming mượt qua Wireless Controller).",
+            "item_id": "ITEM-3"
+          },
+          {
+            "name": "Wireless Controller quản lý tập trung",
+            "category": "Wireless",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "mandatory_specs": {
+              "seamless_roaming": true,
+              "controller": true
+            },
+            "spec_notes": "- 12 Access Point Wi-Fi 6 doanh nghiệp (chịu tải tối thiểu 200 user/AP, bắt buộc dùng nguồn PoE và hỗ trợ roaming mượt qua Wireless Controller).",
+            "source_excerpt": "- 12 Access Point Wi-Fi 6 doanh nghiệp (chịu tải tối thiểu 200 user/AP, bắt buộc dùng nguồn PoE và hỗ trợ roaming mượt qua Wireless Controller).",
+            "item_id": "ITEM-4"
+          },
+          {
+            "name": "Dịch vụ khảo sát, lắp đặt & cấu hình LAN/Wi-Fi/VLAN",
+            "category": "Deployment Service",
+            "quantity": 2,
+            "quantity_ambiguous": false,
+            "mandatory_specs": {
+              "vlan_segmentation": true
+            },
+            "spec_notes": "Khảo sát, lắp đặt rack, cấu hình VLAN, bàn giao As-Built",
+            "source_excerpt": "[Đoạn 3 - Dịch vụ & Bảo trì] Thiên Minh thực hiện khảo sát, lắp đặt rack, cấu hình VLAN tách phòng ban và bàn giao tài liệu As-Built. Yêu cầu gói bảo trì 8x5 ph",
+            "item_id": "ITEM-5"
+          },
+          {
+            "name": "Gói bảo trì 8x5 SLA 8 giờ (12 tháng)",
+            "category": "Maintenance & SLA",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "sla_24x7": false,
+              "response_hours": 8,
+              "duration_months": 12
+            },
+            "spec_notes": "[Đoạn 3 - Dịch vụ & Bảo trì] Thiên Minh thực hiện khảo sát, lắp đặt rack, cấu hình VLAN tách phòng ban và bàn giao tài liệu As-Built. Yêu cầu gói bảo trì 8x5 ph",
+            "source_excerpt": "[Đoạn 3 - Dịch vụ & Bảo trì] Thiên Minh thực hiện khảo sát, lắp đặt rack, cấu hình VLAN tách phòng ban và bàn giao tài liệu As-Built. Yêu cầu gói bảo trì 8x5 ph",
+            "item_id": "ITEM-6"
+          }
+        ],
+        "mandatory_conditions": [
+          {
+            "code": "MAND-COCQ",
+            "label": "Bắt buộc cung cấp đầy đủ CO/CQ chính hãng",
+            "source_excerpt": "[Đoạn 4 - Thời hạn, Ngân sách & Điều kiện bắt buộc] Thời hạn hoàn thành bàn giao trong vòng 5 tuần (trước ngày 18/12/2026). Ngân sách dự kiến tối đa 800 triệu V"
+          },
+          {
+            "code": "MAND-POE",
+            "label": "Switch bắt buộc cấp nguồn PoE+",
+            "source_excerpt": "[Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24"
+          },
+          {
+            "code": "MAND-10G",
+            "label": "Bắt buộc có cổng uplink 10G SFP+",
+            "source_excerpt": "[Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24"
+          },
+          {
+            "code": "MAND-L3",
+            "label": "Switch hỗ trợ định tuyến Layer 3 đầy đủ",
+            "source_excerpt": "[Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24"
+          },
+          {
+            "code": "MAND-RPSU",
+            "label": "Core Switch có nguồn dự phòng kép (Redundant PSU)",
+            "source_excerpt": "[Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24"
+          },
+          {
+            "code": "MAND-SLA-8X5",
+            "label": "Bảo trì 8x5 phản hồi trong 8 giờ",
+            "source_excerpt": "[Đoạn 3 - Dịch vụ & Bảo trì] Thiên Minh thực hiện khảo sát, lắp đặt rack, cấu hình VLAN tách phòng ban và bàn giao tài liệu As-Built. Yêu cầu gói bảo trì 8x5 ph"
+          },
+          {
+            "code": "MAND-ROAMING",
+            "label": "Hệ thống Wi-Fi hỗ trợ roaming mượt tập trung",
+            "source_excerpt": "[Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24"
+          }
+        ],
+        "segments": [
+          {
+            "index": 1,
+            "text": "Kính gửi Công ty Thiên Minh,"
+          },
+          {
+            "index": 2,
+            "text": "[Đoạn 1 - Tổng quan] Tập đoàn Logistics Đông Nam đang mở rộng văn phòng điều hành tại Quận 7, TP.HCM (3 tầng, khoảng 180 nhân sự). Chúng tôi cần chào giá trọn gói thiết bị mạng và dịch vụ triển khai hoàn chỉnh."
+          },
+          {
+            "index": 3,
+            "text": "[Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24 port 10G SFP+ Layer 3 đầy đủ, có nguồn dự phòng kép (Redundant PSU).\n- 12 Access Point Wi-Fi 6 doanh nghiệp (chịu tải tối thiểu 200 user/AP, bắt buộc dùng nguồn PoE và hỗ trợ roaming mượt qua Wireless Controller).\n- 01 bộ Wireless Controller quản lý tập trung."
+          },
+          {
+            "index": 4,
+            "text": "[Đoạn 3 - Dịch vụ & Bảo trì] Thiên Minh thực hiện khảo sát, lắp đặt rack, cấu hình VLAN tách phòng ban và bàn giao tài liệu As-Built. Yêu cầu gói bảo trì 8x5 phản hồi trong 8 giờ trong vòng 12 tháng."
+          },
+          {
+            "index": 5,
+            "text": "[Đoạn 4 - Thời hạn, Ngân sách & Điều kiện bắt buộc] Thời hạn hoàn thành bàn giao trong vòng 5 tuần (trước ngày 18/12/2026). Ngân sách dự kiến tối đa 800 triệu VND (chưa VAT). Bắt buộc cung cấp đầy đủ CO/CQ chính hãng cho toàn bộ thiết bị."
+          }
+        ],
+        "ambiguous_points": [
+
+        ]
+      },
+      "completeness_gate": {
+        "is_complete": true,
+        "decision": "CÓ ĐỦ THÔNG TIN",
+        "completeness_score": 100,
+        "blocking_count": 0,
+        "warning_count": 0,
+        "missing_fields": [
+
+        ],
+        "clarification_email_draft": null
+      },
+      "feasibility": {
+        "matched_items": [
+          {
+            "item_id": "ITEM-1",
+            "requested_name": "Core Switch 10G SFP+ Layer 3",
+            "category": "Core Switch",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-SW-CORE-L3-24SFP",
+            "selected_name": "Core Switch 24-Port 10G SFP+ Full Layer 3 Redundant PSU",
+            "vendor": "Cisco Catalyst 9300X / Aruba 8325",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 145000000,
+            "cost_vnd": 112000000,
+            "lead_time_days": 14,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (24 ports >= 24 ports, Có uplink 10G SFP+, Định tuyến Layer 3 đầy đủ, Có nguồn dự phòng kép).",
+            "passed_checks": [
+              "24 ports >= 24 ports",
+              "Có uplink 10G SFP+",
+              "Định tuyến Layer 3 đầy đủ",
+              "Có nguồn dự phòng kép"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-2",
+            "requested_name": "Switch Access 24-Port PoE+",
+            "category": "Access Switch",
+            "quantity": 4,
+            "status": "MATCHED",
+            "selected_sku": "TM-SW-ACC-POE-24",
+            "selected_name": "Switch Access 24-Port Gigabit PoE+ 370W L2+",
+            "vendor": "Aruba / Cisco Catalyst 1200",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 24500000,
+            "cost_vnd": 18500000,
+            "lead_time_days": 7,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (24 ports >= 24 ports, Hỗ trợ PoE+ 370W, Có uplink 10G SFP+).",
+            "passed_checks": [
+              "24 ports >= 24 ports",
+              "Hỗ trợ PoE+ 370W",
+              "Có uplink 10G SFP+"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-3",
+            "requested_name": "Access Point Wi-Fi 6 Enterprise",
+            "category": "Wireless",
+            "quantity": 12,
+            "status": "MATCHED",
+            "selected_sku": "TM-AP-WIFI6-PRO",
+            "selected_name": "Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+            "vendor": "Aruba AP-515 / Cisco Catalyst 9120",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 14500000,
+            "cost_vnd": 10800000,
+            "lead_time_days": 7,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Chịu tải 250 clients/AP).",
+            "passed_checks": [
+              "Chịu tải 250 clients/AP"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-4",
+            "requested_name": "Wireless Controller quản lý tập trung",
+            "category": "Wireless",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-WLC-CTRL",
+            "selected_name": "Wireless Controller & License Quản lý Tập trung (Tới 50 AP)",
+            "vendor": "Aruba / Cisco",
+            "unit": "Bộ",
+            "unit_price_vnd": 42000000,
+            "cost_vnd": 31500000,
+            "lead_time_days": 7,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Đáp ứng tiêu chuẩn cơ bản).",
+            "passed_checks": [
+              "Đáp ứng tiêu chuẩn cơ bản"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-5",
+            "requested_name": "Dịch vụ khảo sát, lắp đặt & cấu hình LAN/Wi-Fi/VLAN",
+            "category": "Deployment Service",
+            "quantity": 2,
+            "status": "MATCHED",
+            "selected_sku": "TM-SRV-DEPLOY-LAN",
+            "selected_name": "Dịch vụ khảo sát, lắp đặt, cấu hình mạng LAN/Switch/Wi-Fi (Theo Site/Tầng)",
+            "vendor": "Thiên Minh Services",
+            "unit": "Gói",
+            "unit_price_vnd": 28000000,
+            "cost_vnd": 16000000,
+            "lead_time_days": 5,
+            "man_days": 12,
+            "required_roles": [
+              "Network Engineer",
+              "Field Technician"
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai).",
+            "passed_checks": [
+              "Đúng phạm vi dịch vụ triển khai"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-6",
+            "requested_name": "Gói bảo trì 8x5 SLA 8 giờ (12 tháng)",
+            "category": "Maintenance & SLA",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-MNT-8X5",
+            "selected_name": "Gói bảo trì & hỗ trợ kỹ thuật tiêu chuẩn 8x5 (SLA phản hồi 8h) / 12 tháng",
+            "vendor": "Thiên Minh Support",
+            "unit": "Gói/Năm",
+            "unit_price_vnd": 24000000,
+            "cost_vnd": 13000000,
+            "lead_time_days": 1,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Đáp ứng gói bảo trì 8x5).",
+            "passed_checks": [
+              "Đáp ứng gói bảo trì 8x5"
+            ],
+            "failed_checks": [
+
+            ]
+          }
+        ],
+        "rejected_low_price_traps": [
+          {
+            "item_id": "ITEM-2",
+            "requested_item": "Switch Access 24-Port PoE+",
+            "rejected_sku": "TM-SW-ACC-L2-24",
+            "rejected_name": "Switch Access 24-Port Gigabit L2 (Entry)",
+            "rejected_unit_price_vnd": 9500000,
+            "failed_reasons": [
+              "Không hỗ trợ cấp nguồn PoE+",
+              "Không có cổng uplink 10G SFP+"
+            ]
+          },
+          {
+            "item_id": "ITEM-3",
+            "requested_item": "Access Point Wi-Fi 6 Enterprise",
+            "rejected_sku": "TM-AP-WIFI6-STD",
+            "rejected_name": "Access Point Wi-Fi 6 Standard 2x2 (Văn phòng nhẹ)",
+            "rejected_unit_price_vnd": 5800000,
+            "failed_reasons": [
+              "Chỉ chịu tải 80 clients/AP (không đạt chuẩn chịu tải cao >= 200)"
+            ]
+          }
+        ],
+        "has_out_of_catalog": false,
+        "out_of_catalog_items": [
+
+        ],
+        "schedule_check": {
+          "feasible": true,
+          "requested_days": 35,
+          "required_min_days": 23,
+          "earliest_feasible_days": 27,
+          "max_hardware_lead_days": 14,
+          "estimated_man_days": 12,
+          "available_man_days_in_window": 119,
+          "window_weeks": [
+            {
+              "week_id": "2026-W46",
+              "label": "Tuần 12/11 - 18/11/2026 (Hiện tại)",
+              "start_date": "2026-11-12",
+              "end_date": "2026-11-18",
+              "allocated_projects": 6,
+              "utilization_pct": 95,
+              "available_man_days": 3,
+              "active_commitments": [
+                "Ngân hàng Á Đông (Cutover)",
+                "KCN Tân Bình (Core Switch)",
+                "Cảng Cát Lái (Wi-Fi)"
+              ],
+              "status": "OVERLOADED"
+            },
+            {
+              "week_id": "2026-W47",
+              "label": "Tuần 19/11 - 25/11/2026",
+              "start_date": "2026-11-19",
+              "end_date": "2026-11-25",
+              "allocated_projects": 5,
+              "utilization_pct": 86,
+              "available_man_days": 10,
+              "active_commitments": [
+                "Ngân hàng Á Đông (UAT)",
+                "Chuỗi GymFit (SD-WAN)"
+              ],
+              "status": "TIGHT"
+            },
+            {
+              "week_id": "2026-W48",
+              "label": "Tuần 26/11 - 02/12/2026",
+              "start_date": "2026-11-26",
+              "end_date": "2026-12-02",
+              "allocated_projects": 3,
+              "utilization_pct": 58,
+              "available_man_days": 28,
+              "active_commitments": [
+                "Bảo trì định kỳ Q4"
+              ],
+              "status": "AVAILABLE"
+            },
+            {
+              "week_id": "2026-W49",
+              "label": "Tuần 03/12 - 09/12/2026",
+              "start_date": "2026-12-03",
+              "end_date": "2026-12-09",
+              "allocated_projects": 2,
+              "utilization_pct": 42,
+              "available_man_days": 38,
+              "active_commitments": [
+                "Tòa nhà Landmark Hub (Phase 1)"
+              ],
+              "status": "AVAILABLE"
+            },
+            {
+              "week_id": "2026-W50",
+              "label": "Tuần 10/12 - 16/12/2026",
+              "start_date": "2026-12-10",
+              "end_date": "2026-12-16",
+              "allocated_projects": 2,
+              "utilization_pct": 40,
+              "available_man_days": 40,
+              "active_commitments": [
+                "Hỗ trợ vận hành thường xuyên"
+              ],
+              "status": "AVAILABLE"
+            }
+          ],
+          "recommended_weeks": [
+            "Tuần 26/11 - 02/12/2026",
+            "Tuần 03/12 - 09/12/2026"
+          ],
+          "conflict_reasons": [
+
+          ],
+          "recommendation": "Đủ năng lực & lịch triển khai phù hợp trong các tuần: Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026."
+        },
+        "certification_check": {
+          "required_by_rfp": false,
+          "available_certifications": [
+            "CCIE Enterprise",
+            "Aruba ACDX",
+            "CCNP",
+            "Aruba ACMP",
+            "Fortinet NSE4/NSE5",
+            "PCNSA",
+            "Cabling & Rack Ops",
+            "Safety Cert"
+          ],
+          "satisfied": true,
+          "note": "Đội ngũ Thiên Minh có sẵn kỹ sư CCIE, CCNP, Aruba ACMP, Fortinet NSE4/NSE5 đáp ứng."
+        },
+        "technical_feasible": true,
+        "operational_feasible": true,
+        "overall_feasible": true
+      },
+      "pricing": {
+        "applied_tier": {
+          "tier_id": "TIER-2",
+          "name": "Gói dự án 500 triệu – < 1.5 tỷ",
+          "min_amount_vnd": 500000000,
+          "max_amount_vnd": 1499999999,
+          "standard_hardware_discount_pct": 4.0,
+          "standard_service_discount_pct": 6.0,
+          "description": "Chiết khấu gói tích hợp thiết bị + triển khai."
+        },
+        "line_items": [
+          {
+            "item_id": "ITEM-1",
+            "sku": "TM-SW-CORE-L3-24SFP",
+            "name": "Core Switch 24-Port 10G SFP+ Full Layer 3 Redundant PSU",
+            "category": "Core Switch",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 1,
+            "unit_price_vnd": 145000000,
+            "line_list_total_vnd": 145000000,
+            "line_cost_total_vnd": 112000000
+          },
+          {
+            "item_id": "ITEM-2",
+            "sku": "TM-SW-ACC-POE-24",
+            "name": "Switch Access 24-Port Gigabit PoE+ 370W L2+",
+            "category": "Access Switch",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 4,
+            "unit_price_vnd": 24500000,
+            "line_list_total_vnd": 98000000,
+            "line_cost_total_vnd": 74000000
+          },
+          {
+            "item_id": "ITEM-3",
+            "sku": "TM-AP-WIFI6-PRO",
+            "name": "Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+            "category": "Wireless",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 12,
+            "unit_price_vnd": 14500000,
+            "line_list_total_vnd": 174000000,
+            "line_cost_total_vnd": 129600000
+          },
+          {
+            "item_id": "ITEM-4",
+            "sku": "TM-WLC-CTRL",
+            "name": "Wireless Controller & License Quản lý Tập trung (Tới 50 AP)",
+            "category": "Wireless",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Bộ",
+            "quantity": 1,
+            "unit_price_vnd": 42000000,
+            "line_list_total_vnd": 42000000,
+            "line_cost_total_vnd": 31500000
+          },
+          {
+            "item_id": "ITEM-5",
+            "sku": "TM-SRV-DEPLOY-LAN",
+            "name": "Dịch vụ khảo sát, lắp đặt, cấu hình mạng LAN/Switch/Wi-Fi (Theo Site/Tầng)",
+            "category": "Deployment Service",
+            "is_service": true,
+            "status": "MATCHED",
+            "unit": "Gói",
+            "quantity": 2,
+            "unit_price_vnd": 28000000,
+            "line_list_total_vnd": 56000000,
+            "line_cost_total_vnd": 32000000
+          },
+          {
+            "item_id": "ITEM-6",
+            "sku": "TM-MNT-8X5",
+            "name": "Gói bảo trì & hỗ trợ kỹ thuật tiêu chuẩn 8x5 (SLA phản hồi 8h) / 12 tháng",
+            "category": "Maintenance & SLA",
+            "is_service": true,
+            "status": "MATCHED",
+            "unit": "Gói/Năm",
+            "quantity": 1,
+            "unit_price_vnd": 24000000,
+            "line_list_total_vnd": 24000000,
+            "line_cost_total_vnd": 13000000
+          }
+        ],
+        "list_subtotal_vnd": 539000000,
+        "standard_discount_pct": 4.3,
+        "proposed_discount_pct": 4.3,
+        "discount_amount_vnd": 23177000,
+        "discount_reason": "Áp dụng chiết khấu chuẩn theo Gói dự án 500 triệu – < 1.5 tỷ.",
+        "net_before_vat_vnd": 515823000,
+        "vat_rate_pct": 10.0,
+        "vat_amount_vnd": 51582300,
+        "grand_total_vnd": 567405300,
+        "estimated_cost_vnd": 392100000,
+        "gross_profit_vnd": 123723000,
+        "gross_margin_pct": 23.99,
+        "customer_budget_vnd": 800000000,
+        "within_budget": true,
+        "budget_gap_vnd": -284177000,
+        "authority_gate": {
+          "needs_escalation": false,
+          "decision": "TRONG THẨM QUYỀN",
+          "triggers": [
+
+          ],
+          "required_approvers": [
+
+          ],
+          "highest_authority_level": "Nhân viên Kinh doanh"
+        }
+      },
+      "deliverables": {
+        "compliance_matrix": [
+          {
+            "type": "Hạng mục",
+            "requirement": "Core Switch 10G SFP+ Layer 3 (SL: 1)",
+            "proposed_solution": "TM-SW-CORE-L3-24SFP - Core Switch 24-Port 10G SFP+ Full Layer 3 Redundant PSU",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (24 ports >= 24 ports, Có uplink 10G SFP+, Định tuyến Layer 3 đầy đủ, Có nguồn dự phòng kép)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Switch Access 24-Port PoE+ (SL: 4)",
+            "proposed_solution": "TM-SW-ACC-POE-24 - Switch Access 24-Port Gigabit PoE+ 370W L2+",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (24 ports >= 24 ports, Hỗ trợ PoE+ 370W, Có uplink 10G SFP+)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Access Point Wi-Fi 6 Enterprise (SL: 12)",
+            "proposed_solution": "TM-AP-WIFI6-PRO - Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Chịu tải 250 clients/AP)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Wireless Controller quản lý tập trung (SL: 1)",
+            "proposed_solution": "TM-WLC-CTRL - Wireless Controller & License Quản lý Tập trung (Tới 50 AP)",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Đáp ứng tiêu chuẩn cơ bản)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Dịch vụ khảo sát, lắp đặt & cấu hình LAN/Wi-Fi/VLAN (SL: 2)",
+            "proposed_solution": "TM-SRV-DEPLOY-LAN - Dịch vụ khảo sát, lắp đặt, cấu hình mạng LAN/Switch/Wi-Fi (Theo Site/Tầng)",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Gói bảo trì 8x5 SLA 8 giờ (12 tháng) (SL: 1)",
+            "proposed_solution": "TM-MNT-8X5 - Gói bảo trì & hỗ trợ kỹ thuật tiêu chuẩn 8x5 (SLA phản hồi 8h) / 12 tháng",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Đáp ứng gói bảo trì 8x5)."
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Bắt buộc cung cấp đầy đủ CO/CQ chính hãng",
+            "proposed_solution": "MAND-COCQ",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Đoạn 4 - Thời hạn, Ngân sách & Điều kiện bắt buộc] Thời hạn hoàn thành bàn giao trong vòng 5 tuần (trước ngày 18/12/2026). Ngân sách dự kiến tối đa 800 triệu V)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Switch bắt buộc cấp nguồn PoE+",
+            "proposed_solution": "MAND-POE",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Bắt buộc có cổng uplink 10G SFP+",
+            "proposed_solution": "MAND-10G",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Switch hỗ trợ định tuyến Layer 3 đầy đủ",
+            "proposed_solution": "MAND-L3",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Core Switch có nguồn dự phòng kép (Redundant PSU)",
+            "proposed_solution": "MAND-RPSU",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Bảo trì 8x5 phản hồi trong 8 giờ",
+            "proposed_solution": "MAND-SLA-8X5",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Đoạn 3 - Dịch vụ & Bảo trì] Thiên Minh thực hiện khảo sát, lắp đặt rack, cấu hình VLAN tách phòng ban và bàn giao tài liệu As-Built. Yêu cầu gói bảo trì 8x5 ph)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Hệ thống Wi-Fi hỗ trợ roaming mượt tập trung",
+            "proposed_solution": "MAND-ROAMING",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Đoạn 2 - Yêu cầu thiết bị] Hạng mục gồm:\n- 04 Switch Access 24 port PoE+ (tối thiểu 370W, bắt buộc có uplink 10G SFP+ để đấu nối lên Core).\n- 01 Core Switch 24)"
+          },
+          {
+            "type": "Tiến độ & Vận hành",
+            "requirement": "Hoàn thành trong 35 ngày",
+            "proposed_solution": "Triển khai trong Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đủ năng lực & lịch triển khai phù hợp trong các tuần: Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026."
+          }
+        ],
+        "data_boundary_checks": [
+          {
+            "department": "Kinh doanh (Commercial Boundary)",
+            "status": "PASS",
+            "checks": [
+              "Đơn giá khớp 100% bảng giá chuẩn Thiên Minh (6 dòng).",
+              "Chiết khấu đề xuất: 4.3% (Chuẩn bậc: 4.3%).",
+              "Biên lợi nhuận gộp: 23.99%.",
+              "Tổng giá trước VAT nằm trong ngân sách khách hàng."
+            ]
+          },
+          {
+            "department": "Kỹ thuật (Technical Boundary)",
+            "status": "PASS",
+            "checks": [
+              "Đã kiểm tra chéo 7 điều kiện bắt buộc của RFP.",
+              "Đã tự động loại 2 gói giá thấp không đủ chức năng bắt buộc.",
+              "100% thiết bị thuộc danh mục chuẩn sẵn có."
+            ]
+          },
+          {
+            "department": "Vận hành (Operations Boundary)",
+            "status": "PASS",
+            "checks": [
+              "Lead-time nhập hàng tối đa: 14 ngày; Nhu cầu nhân lực: 12 man-days.",
+              "Năng lực tuần hiện có trong khung thời hạn: 119 man-days.",
+              "Lịch triển khai khả thi trong quỹ năng lực đội ngũ."
+            ]
+          }
+        ],
+        "proposal_summary": {
+          "proposal_code": "PROP-RFP-2026-1101",
+          "customer_name": "Tập đoàn Logistics Đông Nam",
+          "location": "Quận 7, TP.HCM | TP.HCM",
+          "scale": "3 tầng, 180 nhân sự",
+          "executive_overview": "Thiên Minh đề xuất giải pháp hạ tầng mạng và bảo mật đồng bộ cho Tập đoàn Logistics Đông Nam, đảm bảo đáp ứng đầy đủ 7 điều kiện kỹ thuật & pháp lý bắt buộc, loại bỏ rủi ro thiếu hụt tính năng và kiểm soát chặt tiến độ bàn giao.",
+          "implementation_plan": [
+            {
+              "phase": "Giai đoạn 1 (Tuần 1)",
+              "activity": "Khảo sát hiện trạng chi tiết, chốt kiến trúc LLD & đặt hàng thiết bị chính hãng (CO/CQ)."
+            },
+            {
+              "phase": "Giai đoạn 2 (Tuần 2-3)",
+              "activity": "Pre-staging cấu hình thiết bị tại Lab Thiên Minh, kiểm thử HA/VLAN/PoE trước khi mang ra site."
+            },
+            {
+              "phase": "Giai đoạn 3 (Tuần 4+)",
+              "activity": "Lắp đặt tận nơi, đấu nối hệ thống, test nghiệm thu UAT và chuyển giao tài liệu As-Built (Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026)."
+            }
+          ],
+          "risk_highlights": [
+            "Đã chặn 2 cấu hình giá thấp không đủ tính năng (PoE/Layer 3/IPS/HA/SLA)."
+          ],
+          "revision_history": [
+
+          ]
+        },
+        "draft_quotation": {
+          "quote_number": "QT-RFP-2026-1101",
+          "issue_date": "2026-11-12",
+          "validity_days": 30,
+          "seller": {
+            "name": "Công ty Cổ phần Công nghệ & Hạ tầng Thiên Minh",
+            "short_name": "Thiên Minh Company",
+            "tax_code": "0315889922",
+            "address": "Tầng 8, Tòa nhà TechHub, Quận 1, TP. Hồ Chí Minh",
+            "hotline": "1900 6889",
+            "email": "sales@thienminhtech.vn"
+          },
+          "buyer": {
+            "name": "Tập đoàn Logistics Đông Nam",
+            "location": "Quận 7, TP.HCM | TP.HCM"
+          },
+          "items": [
+            {
+              "item_id": "ITEM-1",
+              "sku": "TM-SW-CORE-L3-24SFP",
+              "name": "Core Switch 24-Port 10G SFP+ Full Layer 3 Redundant PSU",
+              "category": "Core Switch",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 1,
+              "unit_price_vnd": 145000000,
+              "line_list_total_vnd": 145000000,
+              "line_cost_total_vnd": 112000000
+            },
+            {
+              "item_id": "ITEM-2",
+              "sku": "TM-SW-ACC-POE-24",
+              "name": "Switch Access 24-Port Gigabit PoE+ 370W L2+",
+              "category": "Access Switch",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 4,
+              "unit_price_vnd": 24500000,
+              "line_list_total_vnd": 98000000,
+              "line_cost_total_vnd": 74000000
+            },
+            {
+              "item_id": "ITEM-3",
+              "sku": "TM-AP-WIFI6-PRO",
+              "name": "Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+              "category": "Wireless",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 12,
+              "unit_price_vnd": 14500000,
+              "line_list_total_vnd": 174000000,
+              "line_cost_total_vnd": 129600000
+            },
+            {
+              "item_id": "ITEM-4",
+              "sku": "TM-WLC-CTRL",
+              "name": "Wireless Controller & License Quản lý Tập trung (Tới 50 AP)",
+              "category": "Wireless",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Bộ",
+              "quantity": 1,
+              "unit_price_vnd": 42000000,
+              "line_list_total_vnd": 42000000,
+              "line_cost_total_vnd": 31500000
+            },
+            {
+              "item_id": "ITEM-5",
+              "sku": "TM-SRV-DEPLOY-LAN",
+              "name": "Dịch vụ khảo sát, lắp đặt, cấu hình mạng LAN/Switch/Wi-Fi (Theo Site/Tầng)",
+              "category": "Deployment Service",
+              "is_service": true,
+              "status": "MATCHED",
+              "unit": "Gói",
+              "quantity": 2,
+              "unit_price_vnd": 28000000,
+              "line_list_total_vnd": 56000000,
+              "line_cost_total_vnd": 32000000
+            },
+            {
+              "item_id": "ITEM-6",
+              "sku": "TM-MNT-8X5",
+              "name": "Gói bảo trì & hỗ trợ kỹ thuật tiêu chuẩn 8x5 (SLA phản hồi 8h) / 12 tháng",
+              "category": "Maintenance & SLA",
+              "is_service": true,
+              "status": "MATCHED",
+              "unit": "Gói/Năm",
+              "quantity": 1,
+              "unit_price_vnd": 24000000,
+              "line_list_total_vnd": 24000000,
+              "line_cost_total_vnd": 13000000
+            }
+          ],
+          "summary": {
+            "list_subtotal_vnd": 539000000,
+            "discount_pct": 4.3,
+            "discount_amount_vnd": 23177000,
+            "net_before_vat_vnd": 515823000,
+            "vat_rate_pct": 10.0,
+            "vat_amount_vnd": 51582300,
+            "grand_total_vnd": 567405300
+          },
+          "commercial_terms": [
+            "Thời gian giao hàng & triển khai: 35 ngày.",
+            "Chứng từ kèm theo: Đầy đủ CO/CQ chính hãng từ Nhà sản xuất cho toàn bộ thiết bị.",
+            "Thanh toán: Đợt 1 tạm ứng 40% khi ký HĐ; Đợt 2 thanh toán 40% khi giao hàng; Đợt 3 thanh toán 20% sau nghiệm thu bàn giao.",
+            "Hiệu lực báo giá: 30 ngày kể từ ngày phát hành."
+          ]
+        }
+      },
+      "workflow_trace": [
+        {
+          "step": "RECEIVE",
+          "label": "1. Tiếp nhận yêu cầu chào giá (RFP/RFQ)",
+          "actor": "Hệ thống / Kinh doanh",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Đã tiếp nhận hồ sơ từ Email RFP + File đính kèm (Phụ trách: Nguyễn Minh Tuấn)."
+        },
+        {
+          "step": "EXTRACT",
+          "label": "2. [AI AGENT] Trích xuất & Phân rã yêu cầu",
+          "actor": "AI Agent (Offline Engine)",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Bóc tách được 6 hạng mục, 7 điều kiện bắt buộc. Phân tích bằng Offline NLP & Rule Engine (Hybrid sẵn sàng)."
+        },
+        {
+          "step": "COMPLETENESS_GATE",
+          "label": "3. Cổng kiểm tra: Có đủ thông tin?",
+          "actor": "AI Agent Gatekeeper",
+          "status": "DONE",
+          "decision": "CÓ",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Đạt 100/100 điểm đầy đủ thông tin. Tiếp tục đối chiếu kỹ thuật & vận hành."
+        },
+        {
+          "step": "MATCH_FEASIBILITY",
+          "label": "4. [AI AGENT] Đối chiếu giải pháp, năng lực & lịch triển khai",
+          "actor": "AI Agent + Dữ liệu KT & Vận hành",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Khớp 6 hạng mục; chặn 2 gói giá thấp sai chức năng; ngoài danh mục: Không; lịch triển khai: Khả thi."
+        },
+        {
+          "step": "PRICING",
+          "label": "5. [AI AGENT] Tính toán giá đề xuất & áp dụng chính sách chiết khấu",
+          "actor": "AI Agent Pricing Engine",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Tổng trước VAT: 515.823.000 VND (Chiết khấu 4.3%, Biên LN 23.99%)."
+        },
+        {
+          "step": "AUTHORITY_GATE",
+          "label": "6. Kiểm tra vượt thẩm quyền / Chiết khấu đặc biệt / Ngoài danh mục?",
+          "actor": "AI Agent Policy Gate",
+          "status": "DONE",
+          "decision": "KHÔNG",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Trong thẩm quyền chuẩn — không cần chuyển duyệt vượt cấp."
+        },
+        {
+          "step": "ASSEMBLE_PROPOSAL",
+          "label": "7. Hợp nhất tài liệu: Hồ sơ đề xuất, Ma trận đáp ứng & Dự thảo chào giá",
+          "actor": "AI Agent Document Builder",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Đã tạo Ma trận đáp ứng (14 dòng), Kiểm tra ranh giới 3 phòng ban & Dự thảo báo giá QT-RFP-2026-1101."
+        }
+      ],
+      "hitl": {
+        "escalation_approved": true,
+        "escalation_approver": null,
+        "escalation_comment": null,
+        "dept_signoffs": {
+          "sales": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          },
+          "technical": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          },
+          "operations": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          }
+        }
+      }
+    },
+    {
+      "id": "RFP-2026-1102",
+      "title": "Mở rộng mạng khu khám ngoại trú - Bệnh viện Đa khoa Tâm An",
+      "raw_text": "Email từ Phòng IT Bệnh viện Tâm An:\nChào bạn Vy, bên anh chuẩn bị mở thêm 2 khu khám mới tại cơ sở Bình Thạnh nên cần bên Thiên Minh báo giá gấp hệ thống mạng.\n\nGhi chú cuộc gọi: Anh Hùng (Trưởng phòng IT) bảo cần khoảng mấy con switch gắn cho các phòng khám và camera an ninh, cộng thêm wifi cho bệnh nhân và bác sĩ dùng máy tính bảng. Hệ thống phải chạy ổn định, bảo mật tốt, ưu tiên có firewall bảo vệ dữ liệu bệnh án.\n\nNgân sách dự kiến khoảng 500 triệu. Mong nhận phản hồi sớm.",
+      "channel": "Ghi chú khảo sát + Email rời rạc",
+      "sales_owner": "Trần Thảo Vy",
+      "received_date": "2026-11-11",
+      "expected_scenario": "Không đủ thông tin -> Tạo phiếu yêu cầu KH bổ sung (thiếu số lượng cụ thể, số port/PoE, thông số firewall IPS/HA, deadline, tiêu chuẩn SLA 24x7 hay 8x5)",
+      "status": "NEEDS_CLARIFICATION",
+      "triage_category": "CẦN XÁC MINH / BỔ SUNG THÔNG TIN",
+      "current_node": "CONTACT_CUSTOMER",
+      "clarifications": [
+
+      ],
+      "revision_notes": [
+
+      ],
+      "audit_log": [
+        {
+          "at": "2026-11-12T13:15:54+07:00",
+          "type": "CREATED",
+          "message": "Tiếp nhận yêu cầu chào giá RFP-2026-1102 qua Ghi chú khảo sát + Email rời rạc."
+        },
+        {
+          "at": "2026-11-12T13:15:54+07:00",
+          "type": "AI_RUN",
+          "message": "AI Agent tạm dừng ở cổng kiểm tra thông tin: Thiếu dữ liệu bắt buộc."
+        }
+      ],
+      "created_at": "2026-11-12T13:15:54+07:00",
+      "updated_at": "2026-11-12T13:15:54+07:00",
+      "extracted": {
+        "customer_name": "Bệnh viện Tâm An:",
+        "location": "cơ sở Bình Thạnh",
+        "scale_summary": "2 khu khám mới tại cơ sở Bình Thạnh nên cần bên Thiên Minh báo giá gấp hệ thống mạng",
+        "deadline": {
+          "raw_text": null,
+          "duration_days": null,
+          "target_date": null
+        },
+        "budget": {
+          "amount_vnd": 500000000,
+          "vat_excluded": true,
+          "raw_text": "500 triệu VND"
+        },
+        "requested_discount_pct": null,
+        "items": [
+          {
+            "name": "Switch mạng (chưa rõ số port/PoE)",
+            "category": "Access Switch",
+            "quantity": null,
+            "quantity_ambiguous": true,
+            "spec_ambiguous": true,
+            "mandatory_specs": {
+              "ports": null,
+              "poe": true,
+              "uplink_10g": false,
+              "layer3": false,
+              "stacking": false
+            },
+            "spec_notes": "Ghi chú cuộc gọi: Anh Hùng (Trưởng phòng IT) bảo cần khoảng mấy con switch gắn cho các phòng khám và camera an ninh, cộng thêm wifi cho bệnh nhân và bác sĩ dùng máy tính bảng",
+            "source_excerpt": "Ghi chú cuộc gọi: Anh Hùng (Trưởng phòng IT) bảo cần khoảng mấy con switch gắn cho các phòng khám và camera an ninh, cộng thêm wifi cho bệnh nhân và bác sĩ dùng máy tính bảng",
+            "item_id": "ITEM-1"
+          },
+          {
+            "name": "Firewall bảo mật (chưa rõ thông số IPS/User)",
+            "category": "Firewall",
+            "quantity": null,
+            "quantity_ambiguous": true,
+            "spec_ambiguous": true,
+            "mandatory_specs": {
+              "ips_gbps": null,
+              "ha": false,
+              "uplink_10g": false
+            },
+            "spec_notes": "Hệ thống phải chạy ổn định, bảo mật tốt, ưu tiên có firewall bảo vệ dữ liệu bệnh án.",
+            "source_excerpt": "Hệ thống phải chạy ổn định, bảo mật tốt, ưu tiên có firewall bảo vệ dữ liệu bệnh án.",
+            "item_id": "ITEM-2"
+          },
+          {
+            "name": "Hệ thống Wi-Fi / Access Point (chưa rõ số lượng AP)",
+            "category": "Wireless",
+            "quantity": null,
+            "quantity_ambiguous": true,
+            "spec_ambiguous": true,
+            "mandatory_specs": {
+              "high_density_wifi": true,
+              "seamless_roaming": false,
+              "poe": true
+            },
+            "spec_notes": "Ghi chú cuộc gọi: Anh Hùng (Trưởng phòng IT) bảo cần khoảng mấy con switch gắn cho các phòng khám và camera an ninh, cộng thêm wifi cho bệnh nhân và bác sĩ dùng máy tính bảng",
+            "source_excerpt": "Ghi chú cuộc gọi: Anh Hùng (Trưởng phòng IT) bảo cần khoảng mấy con switch gắn cho các phòng khám và camera an ninh, cộng thêm wifi cho bệnh nhân và bác sĩ dùng máy tính bảng",
+            "item_id": "ITEM-3"
+          }
+        ],
+        "mandatory_conditions": [
+
+        ],
+        "segments": [
+          {
+            "index": 1,
+            "text": "Email từ Phòng IT Bệnh viện Tâm An:\nChào bạn Vy, bên anh chuẩn bị mở thêm 2 khu khám mới tại cơ sở Bình Thạnh nên cần bên Thiên Minh báo giá gấp hệ thống mạng."
+          },
+          {
+            "index": 2,
+            "text": "Ghi chú cuộc gọi: Anh Hùng (Trưởng phòng IT) bảo cần khoảng mấy con switch gắn cho các phòng khám và camera an ninh, cộng thêm wifi cho bệnh nhân và bác sĩ dùng máy tính bảng. Hệ thống phải chạy ổn định, bảo mật tốt, ưu tiên có firewall bảo vệ dữ liệu bệnh án."
+          },
+          {
+            "index": 3,
+            "text": "Ngân sách dự kiến khoảng 500 triệu. Mong nhận phản hồi sớm."
+          }
+        ],
+        "ambiguous_points": [
+          "Số lượng switch không xác định (\"mấy con switch\")",
+          "Không nêu rõ số lượng Access Point và mật độ user Wi-Fi",
+          "Đề cập Firewall nhưng không có số liệu user/throughput IPS/HA",
+          "Không có mốc deadline hoặc thời gian triển khai cụ thể"
+        ]
+      },
+      "completeness_gate": {
+        "is_complete": false,
+        "decision": "KHÔNG ĐỦ THÔNG TIN",
+        "completeness_score": 10,
+        "blocking_count": 7,
+        "warning_count": 1,
+        "missing_fields": [
+          {
+            "field": "Số lượng hạng mục: Switch mạng (chưa rõ số port/PoE)",
+            "severity": "BLOCKING",
+            "reason": "Hồ sơ chỉ mô tả chung chung (\"Ghi chú cuộc gọi: Anh Hùng (Trưởng phòng IT) bảo cần khoảng mấy con switch gắn c...\"), chưa có số lượng chính xác để định giá và kiểm tra tồn kho.",
+            "question_for_customer": "Cho hạng mục Switch mạng (chưa rõ số port/PoE), Quý khách cần chính xác bao nhiêu thiết bị/đơn vị?"
+          },
+          {
+            "field": "Thông số kỹ thuật: Switch mạng (chưa rõ số port/PoE)",
+            "severity": "BLOCKING",
+            "reason": "Thiếu thông số bắt buộc (ví dụ: số port 24/48, cần PoE không, thông lượng IPS Firewall hoặc mức chịu tải user) — dễ dẫn đến chọn sai gói giá thấp không đủ chức năng.",
+            "question_for_customer": "Vui lòng xác nhận thông số kỹ thuật tối thiểu cho Switch mạng (chưa rõ số port/PoE) (số port, nhu cầu cấp nguồn PoE, số user đồng thời hoặc thông lượng IPS/HA)."
+          },
+          {
+            "field": "Số lượng hạng mục: Firewall bảo mật (chưa rõ thông số IPS/User)",
+            "severity": "BLOCKING",
+            "reason": "Hồ sơ chỉ mô tả chung chung (\"Hệ thống phải chạy ổn định, bảo mật tốt, ưu tiên có firewall bảo vệ dữ liệu bệnh...\"), chưa có số lượng chính xác để định giá và kiểm tra tồn kho.",
+            "question_for_customer": "Cho hạng mục Firewall bảo mật (chưa rõ thông số IPS/User), Quý khách cần chính xác bao nhiêu thiết bị/đơn vị?"
+          },
+          {
+            "field": "Thông số kỹ thuật: Firewall bảo mật (chưa rõ thông số IPS/User)",
+            "severity": "BLOCKING",
+            "reason": "Thiếu thông số bắt buộc (ví dụ: số port 24/48, cần PoE không, thông lượng IPS Firewall hoặc mức chịu tải user) — dễ dẫn đến chọn sai gói giá thấp không đủ chức năng.",
+            "question_for_customer": "Vui lòng xác nhận thông số kỹ thuật tối thiểu cho Firewall bảo mật (chưa rõ thông số IPS/User) (số port, nhu cầu cấp nguồn PoE, số user đồng thời hoặc thông lượng IPS/HA)."
+          },
+          {
+            "field": "Số lượng hạng mục: Hệ thống Wi-Fi / Access Point (chưa rõ số lượng AP)",
+            "severity": "BLOCKING",
+            "reason": "Hồ sơ chỉ mô tả chung chung (\"Ghi chú cuộc gọi: Anh Hùng (Trưởng phòng IT) bảo cần khoảng mấy con switch gắn c...\"), chưa có số lượng chính xác để định giá và kiểm tra tồn kho.",
+            "question_for_customer": "Cho hạng mục Hệ thống Wi-Fi / Access Point (chưa rõ số lượng AP), Quý khách cần chính xác bao nhiêu thiết bị/đơn vị?"
+          },
+          {
+            "field": "Thông số kỹ thuật: Hệ thống Wi-Fi / Access Point (chưa rõ số lượng AP)",
+            "severity": "BLOCKING",
+            "reason": "Thiếu thông số bắt buộc (ví dụ: số port 24/48, cần PoE không, thông lượng IPS Firewall hoặc mức chịu tải user) — dễ dẫn đến chọn sai gói giá thấp không đủ chức năng.",
+            "question_for_customer": "Vui lòng xác nhận thông số kỹ thuật tối thiểu cho Hệ thống Wi-Fi / Access Point (chưa rõ số lượng AP) (số port, nhu cầu cấp nguồn PoE, số user đồng thời hoặc thông lượng IPS/HA)."
+          },
+          {
+            "field": "Thời hạn triển khai (Deadline)",
+            "severity": "BLOCKING",
+            "reason": "Chưa có thời hạn hoàn thành/nghiệm thu cụ thể (chỉ nêu \"sớm\" hoặc bỏ trống), Bộ phận Vận hành không thể xếp lịch đội kỹ thuật.",
+            "question_for_customer": "Quý khách dự kiến ngày hoàn tất triển khai & nghiệm thu (Go-live) là khi nào (hoặc trong bao nhiêu tuần kể từ ngày ký)?"
+          },
+          {
+            "field": "Yêu cầu bảo trì & SLA vận hành",
+            "severity": "WARNING",
+            "reason": "Chưa nêu rõ gói bảo trì 8x5 hay 24x7 (SLA 4h/8h) sau nghiệm thu.",
+            "question_for_customer": "Quý khách có yêu cầu gói bảo trì định kỳ 8x5 (SLA 8h) hay trực hỗ trợ 24x7 (SLA 4h) không?"
+          }
+        ],
+        "clarification_email_draft": "Kính gửi Quý khách hàng Bệnh viện Tâm An:,\n\nCảm ơn Quý khách đã gửi yêu cầu chào giá tới Công ty Thiên Minh. Để đảm bảo phương án kỹ thuật chính xác, đủ chức năng, đúng tiến độ và không phát sinh chi phí ngoài dự kiến, Bộ phận Kinh doanh & Kỹ thuật kính nhờ Quý khách xác nhận bổ sung một số thông tin sau trước khi lập bản chào giá chính thức:\n\n1. [Bắt buộc] Cho hạng mục Switch mạng (chưa rõ số port/PoE), Quý khách cần chính xác bao nhiêu thiết bị/đơn vị?\n2. [Bắt buộc] Vui lòng xác nhận thông số kỹ thuật tối thiểu cho Switch mạng (chưa rõ số port/PoE) (số port, nhu cầu cấp nguồn PoE, số user đồng thời hoặc thông lượng IPS/HA).\n3. [Bắt buộc] Cho hạng mục Firewall bảo mật (chưa rõ thông số IPS/User), Quý khách cần chính xác bao nhiêu thiết bị/đơn vị?\n4. [Bắt buộc] Vui lòng xác nhận thông số kỹ thuật tối thiểu cho Firewall bảo mật (chưa rõ thông số IPS/User) (số port, nhu cầu cấp nguồn PoE, số user đồng thời hoặc thông lượng IPS/HA).\n5. [Bắt buộc] Cho hạng mục Hệ thống Wi-Fi / Access Point (chưa rõ số lượng AP), Quý khách cần chính xác bao nhiêu thiết bị/đơn vị?\n6. [Bắt buộc] Vui lòng xác nhận thông số kỹ thuật tối thiểu cho Hệ thống Wi-Fi / Access Point (chưa rõ số lượng AP) (số port, nhu cầu cấp nguồn PoE, số user đồng thời hoặc thông lượng IPS/HA).\n7. [Bắt buộc] Quý khách dự kiến ngày hoàn tất triển khai & nghiệm thu (Go-live) là khi nào (hoặc trong bao nhiêu tuần kể từ ngày ký)?\n8. [Khuyến nghị] Quý khách có yêu cầu gói bảo trì định kỳ 8x5 (SLA 8h) hay trực hỗ trợ 24x7 (SLA 4h) không?\n\nNgay khi nhận được phản hồi của Quý khách, Thiên Minh sẽ hoàn tất hồ sơ đề xuất và gửi bản chào giá chi tiết trong thời gian sớm nhất.\n\nTrân trọng,\nPhòng Kinh doanh - Công ty Thiên Minh\n"
+      },
+      "feasibility": null,
+      "pricing": null,
+      "deliverables": null,
+      "workflow_trace": [
+        {
+          "step": "RECEIVE",
+          "label": "1. Tiếp nhận yêu cầu chào giá (RFP/RFQ)",
+          "actor": "Hệ thống / Kinh doanh",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Đã tiếp nhận hồ sơ từ Ghi chú khảo sát + Email rời rạc (Phụ trách: Trần Thảo Vy)."
+        },
+        {
+          "step": "EXTRACT",
+          "label": "2. [AI AGENT] Trích xuất & Phân rã yêu cầu",
+          "actor": "AI Agent (Offline Engine)",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Bóc tách được 3 hạng mục, 0 điều kiện bắt buộc. Phân tích bằng Offline NLP & Rule Engine (Hybrid sẵn sàng)."
+        },
+        {
+          "step": "COMPLETENESS_GATE",
+          "label": "3. Cổng kiểm tra: Có đủ thông tin?",
+          "actor": "AI Agent Gatekeeper",
+          "status": "BLOCKED",
+          "decision": "KHÔNG",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Phát hiện 7 thiếu sót bắt buộc (Điểm đầy đủ: 10/100). Chuyển nhánh Kinh doanh liên hệ KH bổ sung."
+        },
+        {
+          "step": "CONTACT_CUSTOMER",
+          "label": "3b. Kinh doanh liên hệ KH yêu cầu bổ sung",
+          "actor": "Trần Thảo Vy",
+          "status": "ACTIVE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Đã soạn sẵn Email/Phiếu yêu cầu KH xác nhận thông tin còn thiếu."
+        }
+      ]
+    },
+    {
+      "id": "RFP-2026-1103",
+      "title": "Hệ thống Firewall HA & Core Switch cho Trung tâm giao dịch - Fintech An Phát",
+      "raw_text": "[Phần 1 - Bối cảnh] Công ty CP Fintech An Phát tại Quận 3, TP.HCM cần nâng cấp cụm bảo mật và switch phân phối cho 350 nhân sự giao dịch tài chính.\n\n[Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch 48 port PoE+ Layer 3 đầy đủ, hỗ trợ Stacking.\n- Dịch vụ thiết kế & triển khai cấu hình HA failover test.\n- Gói bảo trì bắt buộc 24x7, SLA ứng cứu sự cố trong 4 giờ (12 tháng).\n\n[Phần 3 - Lưu ý ngân sách & tiến độ] Ngân sách tối đa 460 triệu VND (chưa VAT). Lưu ý: Bên chúng tôi yêu cầu hoàn tất triển khai và nghiệm thu gấp trong vòng 10 ngày (trước 22/11/2026). Yêu cầu CO/CQ đầy đủ.",
+      "channel": "Cổng đấu thầu nội bộ",
+      "sales_owner": "Lê Hoàng Nam",
+      "received_date": "2026-11-11",
+      "expected_scenario": "Cảnh báo bẫy giá thấp (không thể dùng Firewall 60F hoặc Switch L2 rẻ) + Xung đột lịch triển khai (tuần W46/W47 đang quá tải 95%/86%) + Vượt ngân sách -> Cần chuyển duyệt & thương thảo lại",
+      "status": "PENDING_ESCALATION",
+      "triage_category": "CẦN CHUYỂN DUYỆT (VƯỢT THẨM QUYỀN / RỦI RO)",
+      "current_node": "ESCALATION_APPROVAL",
+      "clarifications": [
+
+      ],
+      "revision_notes": [
+
+      ],
+      "audit_log": [
+        {
+          "at": "2026-11-12T13:15:54+07:00",
+          "type": "CREATED",
+          "message": "Tiếp nhận yêu cầu chào giá RFP-2026-1103 qua Cổng đấu thầu nội bộ."
+        },
+        {
+          "at": "2026-11-12T13:15:54+07:00",
+          "type": "AI_RUN",
+          "message": "AI Agent hoàn tất phân tích. Trạng thái: CẦN CHUYỂN DUYỆT (VƯỢT THẨM QUYỀN / RỦI RO)."
+        }
+      ],
+      "created_at": "2026-11-12T13:15:54+07:00",
+      "updated_at": "2026-11-12T13:15:54+07:00",
+      "extracted": {
+        "customer_name": "Công ty CP Fintech An Phát",
+        "location": "Quận 3, TP.HCM | TP.HCM",
+        "scale_summary": "350 nhân sự",
+        "deadline": {
+          "raw_text": "10 ngày - trước 22/11/2026",
+          "duration_days": 10,
+          "target_date": "2026-11-22"
+        },
+        "budget": {
+          "amount_vnd": 460000000,
+          "vat_excluded": true,
+          "raw_text": "460 triệu VND"
+        },
+        "requested_discount_pct": null,
+        "items": [
+          {
+            "name": "Switch Access 48-Port PoE+ Layer 3",
+            "category": "Access Switch",
+            "quantity": 2,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "ports": 48,
+              "poe": true,
+              "uplink_10g": false,
+              "layer3": true,
+              "stacking": true
+            },
+            "spec_notes": "- 02 Switch 48 port PoE+ Layer 3 đầy đủ, hỗ trợ Stacking.",
+            "source_excerpt": "- 02 Switch 48 port PoE+ Layer 3 đầy đủ, hỗ trợ Stacking.",
+            "item_id": "ITEM-1"
+          },
+          {
+            "name": "Firewall NGFW (IPS >= 5.0 Gbps, HA)",
+            "category": "Firewall",
+            "quantity": 2,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "ips_gbps": 5.0,
+              "ha": true,
+              "uplink_10g": true
+            },
+            "spec_notes": "- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.",
+            "source_excerpt": "- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.",
+            "item_id": "ITEM-2"
+          },
+          {
+            "name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "category": "Deployment Service",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "mandatory_specs": {
+              "ha_failover_test": true
+            },
+            "spec_notes": "Thiết kế kiến trúc bảo mật, cấu hình HA/IPS/VPN & nghiệm thu",
+            "source_excerpt": "[Phần 1 - Bối cảnh] Công ty CP Fintech An Phát tại Quận 3, TP.HCM cần nâng cấp cụm bảo mật và switch phân phối cho 350 nhân sự giao dịch tài chính.",
+            "item_id": "ITEM-3"
+          },
+          {
+            "name": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng)",
+            "category": "Maintenance & SLA",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "sla_24x7": true,
+              "response_hours": 4,
+              "duration_months": 12
+            },
+            "spec_notes": "[Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch ",
+            "source_excerpt": "[Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch ",
+            "item_id": "ITEM-4"
+          }
+        ],
+        "mandatory_conditions": [
+          {
+            "code": "MAND-COCQ",
+            "label": "Bắt buộc cung cấp đầy đủ CO/CQ chính hãng",
+            "source_excerpt": "[Phần 3 - Lưu ý ngân sách & tiến độ] Ngân sách tối đa 460 triệu VND (chưa VAT). Lưu ý: Bên chúng tôi yêu cầu hoàn tất triển khai và nghiệm thu gấp trong vòng 10"
+          },
+          {
+            "code": "MAND-POE",
+            "label": "Switch bắt buộc cấp nguồn PoE+",
+            "source_excerpt": "[Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch "
+          },
+          {
+            "code": "MAND-10G",
+            "label": "Bắt buộc có cổng uplink 10G SFP+",
+            "source_excerpt": "[Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch "
+          },
+          {
+            "code": "MAND-L3",
+            "label": "Switch hỗ trợ định tuyến Layer 3 đầy đủ",
+            "source_excerpt": "[Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch "
+          },
+          {
+            "code": "MAND-IPS",
+            "label": "Firewall bắt buộc thông lượng IPS >= 5 Gbps",
+            "source_excerpt": "[Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch "
+          },
+          {
+            "code": "MAND-HA",
+            "label": "Firewall chạy cấu hình dự phòng HA",
+            "source_excerpt": "[Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch "
+          },
+          {
+            "code": "MAND-SLA-24X7",
+            "label": "Bảo trì 24x7 với SLA ứng cứu trong 4 giờ",
+            "source_excerpt": "[Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch "
+          }
+        ],
+        "segments": [
+          {
+            "index": 1,
+            "text": "[Phần 1 - Bối cảnh] Công ty CP Fintech An Phát tại Quận 3, TP.HCM cần nâng cấp cụm bảo mật và switch phân phối cho 350 nhân sự giao dịch tài chính."
+          },
+          {
+            "index": 2,
+            "text": "[Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch 48 port PoE+ Layer 3 đầy đủ, hỗ trợ Stacking.\n- Dịch vụ thiết kế & triển khai cấu hình HA failover test.\n- Gói bảo trì bắt buộc 24x7, SLA ứng cứu sự cố trong 4 giờ (12 tháng)."
+          },
+          {
+            "index": 3,
+            "text": "[Phần 3 - Lưu ý ngân sách & tiến độ] Ngân sách tối đa 460 triệu VND (chưa VAT). Lưu ý: Bên chúng tôi yêu cầu hoàn tất triển khai và nghiệm thu gấp trong vòng 10 ngày (trước 22/11/2026). Yêu cầu CO/CQ đầy đủ."
+          }
+        ],
+        "ambiguous_points": [
+
+        ]
+      },
+      "completeness_gate": {
+        "is_complete": true,
+        "decision": "CÓ ĐỦ THÔNG TIN",
+        "completeness_score": 100,
+        "blocking_count": 0,
+        "warning_count": 0,
+        "missing_fields": [
+
+        ],
+        "clarification_email_draft": null
+      },
+      "feasibility": {
+        "matched_items": [
+          {
+            "item_id": "ITEM-1",
+            "requested_name": "Switch Access 48-Port PoE+ Layer 3",
+            "category": "Access Switch",
+            "quantity": 2,
+            "status": "MATCHED",
+            "selected_sku": "TM-SW-ACC-POE-48-L3",
+            "selected_name": "Switch Access/Dist 48-Port Gigabit PoE+ 740W Layer 3 Stackable",
+            "vendor": "Cisco Catalyst 9200L / Aruba 6200F",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 68000000,
+            "cost_vnd": 52000000,
+            "lead_time_days": 10,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (48 ports >= 48 ports, Hỗ trợ PoE+ 740W, Định tuyến Layer 3 đầy đủ, Hỗ trợ Stacking).",
+            "passed_checks": [
+              "48 ports >= 48 ports",
+              "Hỗ trợ PoE+ 740W",
+              "Định tuyến Layer 3 đầy đủ",
+              "Hỗ trợ Stacking"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-2",
+            "requested_name": "Firewall NGFW (IPS >= 5.0 Gbps, HA)",
+            "category": "Firewall",
+            "quantity": 2,
+            "status": "MATCHED",
+            "selected_sku": "TM-FW-ENT-5G",
+            "selected_name": "Firewall NGFW Enterprise (IPS 5.5 Gbps, Hỗ trợ HA)",
+            "vendor": "Fortinet FortiGate 200F / Palo Alto PA-1410",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 118000000,
+            "cost_vnd": 91000000,
+            "lead_time_days": 10,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (IPS 5.5 Gbps >= 5.0 Gbps, Hỗ trợ cụm HA).",
+            "passed_checks": [
+              "IPS 5.5 Gbps >= 5.0 Gbps",
+              "Hỗ trợ cụm HA"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-3",
+            "requested_name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "category": "Deployment Service",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-SRV-DEPLOY-SEC",
+            "selected_name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "vendor": "Thiên Minh Services",
+            "unit": "Gói",
+            "unit_price_vnd": 35000000,
+            "cost_vnd": 19500000,
+            "lead_time_days": 5,
+            "man_days": 7,
+            "required_roles": [
+              "Security Engineer",
+              "Network Architect"
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai).",
+            "passed_checks": [
+              "Đúng phạm vi dịch vụ triển khai"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-4",
+            "requested_name": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng)",
+            "category": "Maintenance & SLA",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-MNT-24X7-4H",
+            "selected_name": "Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+            "vendor": "Thiên Minh Support",
+            "unit": "Gói/Năm",
+            "unit_price_vnd": 54000000,
+            "cost_vnd": 31000000,
+            "lead_time_days": 1,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (SLA 24x7 phản hồi 4h).",
+            "passed_checks": [
+              "SLA 24x7 phản hồi 4h"
+            ],
+            "failed_checks": [
+
+            ]
+          }
+        ],
+        "rejected_low_price_traps": [
+          {
+            "item_id": "ITEM-1",
+            "requested_item": "Switch Access 48-Port PoE+ Layer 3",
+            "rejected_sku": "TM-SW-ACC-L2-24",
+            "rejected_name": "Switch Access 24-Port Gigabit L2 (Entry)",
+            "rejected_unit_price_vnd": 9500000,
+            "failed_reasons": [
+              "Chỉ có 24 ports (yêu cầu 48 ports)",
+              "Không hỗ trợ cấp nguồn PoE+",
+              "Chỉ hỗ trợ Layer 2, thiếu Layer 3 bắt buộc",
+              "Không hỗ trợ Stacking"
+            ]
+          },
+          {
+            "item_id": "ITEM-1",
+            "requested_item": "Switch Access 48-Port PoE+ Layer 3",
+            "rejected_sku": "TM-SW-ACC-POE-24",
+            "rejected_name": "Switch Access 24-Port Gigabit PoE+ 370W L2+",
+            "rejected_unit_price_vnd": 24500000,
+            "failed_reasons": [
+              "Chỉ có 24 ports (yêu cầu 48 ports)",
+              "Chỉ hỗ trợ Layer 2, thiếu Layer 3 bắt buộc",
+              "Không hỗ trợ Stacking"
+            ]
+          },
+          {
+            "item_id": "ITEM-2",
+            "requested_item": "Firewall NGFW (IPS >= 5.0 Gbps, HA)",
+            "rejected_sku": "TM-FW-ENTRY-1G",
+            "rejected_name": "Firewall NGFW Entry (IPS 1.2 Gbps, Single Unit)",
+            "rejected_unit_price_vnd": 26000000,
+            "failed_reasons": [
+              "IPS chỉ đạt 1.4 Gbps (yêu cầu >= 5.0 Gbps)",
+              "Không hỗ trợ chạy cụm dự phòng HA"
+            ]
+          },
+          {
+            "item_id": "ITEM-4",
+            "requested_item": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng)",
+            "rejected_sku": "TM-MNT-8X5",
+            "rejected_name": "Gói bảo trì & hỗ trợ kỹ thuật tiêu chuẩn 8x5 (SLA phản hồi 8h) / 12 tháng",
+            "rejected_unit_price_vnd": 24000000,
+            "failed_reasons": [
+              "Chỉ hỗ trợ giờ hành chính 8x5 (8h), KHÔNG đạt yêu cầu 24x7 SLA 4h"
+            ]
+          }
+        ],
+        "has_out_of_catalog": false,
+        "out_of_catalog_items": [
+
+        ],
+        "schedule_check": {
+          "feasible": false,
+          "requested_days": 10,
+          "required_min_days": 18,
+          "earliest_feasible_days": 24,
+          "max_hardware_lead_days": 10,
+          "estimated_man_days": 7,
+          "available_man_days_in_window": 13,
+          "window_weeks": [
+            {
+              "week_id": "2026-W46",
+              "label": "Tuần 12/11 - 18/11/2026 (Hiện tại)",
+              "start_date": "2026-11-12",
+              "end_date": "2026-11-18",
+              "allocated_projects": 6,
+              "utilization_pct": 95,
+              "available_man_days": 3,
+              "active_commitments": [
+                "Ngân hàng Á Đông (Cutover)",
+                "KCN Tân Bình (Core Switch)",
+                "Cảng Cát Lái (Wi-Fi)"
+              ],
+              "status": "OVERLOADED"
+            },
+            {
+              "week_id": "2026-W47",
+              "label": "Tuần 19/11 - 25/11/2026",
+              "start_date": "2026-11-19",
+              "end_date": "2026-11-25",
+              "allocated_projects": 5,
+              "utilization_pct": 86,
+              "available_man_days": 10,
+              "active_commitments": [
+                "Ngân hàng Á Đông (UAT)",
+                "Chuỗi GymFit (SD-WAN)"
+              ],
+              "status": "TIGHT"
+            }
+          ],
+          "recommended_weeks": [
+            "Tuần 26/11 - 02/12/2026",
+            "Tuần 03/12 - 09/12/2026"
+          ],
+          "conflict_reasons": [
+            "Thời hạn KH yêu cầu (10 ngày) ngắn hơn tổng thời gian nhập hàng + thi công tối thiểu (18 ngày: lead-time 10d + buffer 5d + triển khai).",
+            "Cửa sổ triển khai rơi vào tuần đang quá tải/sát trần: 2026-W46 (95%), 2026-W47 (86%)."
+          ],
+          "recommendation": "Cảnh báo lịch triển khai không khả thi đúng hạn 10 ngày! Đề xuất dời mốc giao hàng sang 24 ngày (tuần Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026) hoặc xin duyệt tăng ca/thuê ngoài."
+        },
+        "certification_check": {
+          "required_by_rfp": false,
+          "available_certifications": [
+            "CCIE Enterprise",
+            "Aruba ACDX",
+            "CCNP",
+            "Aruba ACMP",
+            "Fortinet NSE4/NSE5",
+            "PCNSA",
+            "Cabling & Rack Ops",
+            "Safety Cert"
+          ],
+          "satisfied": true,
+          "note": "Đội ngũ Thiên Minh có sẵn kỹ sư CCIE, CCNP, Aruba ACMP, Fortinet NSE4/NSE5 đáp ứng."
+        },
+        "technical_feasible": true,
+        "operational_feasible": false,
+        "overall_feasible": false
+      },
+      "pricing": {
+        "applied_tier": {
+          "tier_id": "TIER-1",
+          "name": "Chuẩn đơn hàng < 500 triệu",
+          "min_amount_vnd": 0,
+          "max_amount_vnd": 499999999,
+          "standard_hardware_discount_pct": 2.0,
+          "standard_service_discount_pct": 3.0,
+          "description": "Chiết khấu cơ bản cho đơn hàng doanh nghiệp vừa và nhỏ."
+        },
+        "line_items": [
+          {
+            "item_id": "ITEM-1",
+            "sku": "TM-SW-ACC-POE-48-L3",
+            "name": "Switch Access/Dist 48-Port Gigabit PoE+ 740W Layer 3 Stackable",
+            "category": "Access Switch",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 2,
+            "unit_price_vnd": 68000000,
+            "line_list_total_vnd": 136000000,
+            "line_cost_total_vnd": 104000000
+          },
+          {
+            "item_id": "ITEM-2",
+            "sku": "TM-FW-ENT-5G",
+            "name": "Firewall NGFW Enterprise (IPS 5.5 Gbps, Hỗ trợ HA)",
+            "category": "Firewall",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 2,
+            "unit_price_vnd": 118000000,
+            "line_list_total_vnd": 236000000,
+            "line_cost_total_vnd": 182000000
+          },
+          {
+            "item_id": "ITEM-3",
+            "sku": "TM-SRV-DEPLOY-SEC",
+            "name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "category": "Deployment Service",
+            "is_service": true,
+            "status": "MATCHED",
+            "unit": "Gói",
+            "quantity": 1,
+            "unit_price_vnd": 35000000,
+            "line_list_total_vnd": 35000000,
+            "line_cost_total_vnd": 19500000
+          },
+          {
+            "item_id": "ITEM-4",
+            "sku": "TM-MNT-24X7-4H",
+            "name": "Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+            "category": "Maintenance & SLA",
+            "is_service": true,
+            "status": "MATCHED",
+            "unit": "Gói/Năm",
+            "quantity": 1,
+            "unit_price_vnd": 54000000,
+            "line_list_total_vnd": 54000000,
+            "line_cost_total_vnd": 31000000
+          }
+        ],
+        "list_subtotal_vnd": 461000000,
+        "standard_discount_pct": 2.19,
+        "proposed_discount_pct": 2.19,
+        "discount_amount_vnd": 10095900,
+        "discount_reason": "Áp dụng chiết khấu chuẩn theo Chuẩn đơn hàng < 500 triệu.",
+        "net_before_vat_vnd": 450904100,
+        "vat_rate_pct": 10.0,
+        "vat_amount_vnd": 45090410,
+        "grand_total_vnd": 495994510,
+        "estimated_cost_vnd": 336500000,
+        "gross_profit_vnd": 114404100,
+        "gross_margin_pct": 25.37,
+        "customer_budget_vnd": 460000000,
+        "within_budget": true,
+        "budget_gap_vnd": -9095900,
+        "authority_gate": {
+          "needs_escalation": true,
+          "decision": "CÓ VƯỢT THẨM QUYỀN / CẦN PHÊ DUYỆT",
+          "triggers": [
+            {
+              "code": "ESC-SCHED-OPS",
+              "severity": "HIGH",
+              "reason": "Thời hạn KH yêu cầu (10 ngày) ngắn hơn tổng thời gian nhập hàng + thi công tối thiểu (18 ngày: lead-time 10d + buffer 5d + triển khai). Cửa sổ triển khai rơi vào tuần đang quá tải/sát trần: 2026-W46 (95%), 2026-W47 (86%).",
+              "approver": "Trưởng phòng Vận hành & Trưởng phòng Kinh doanh"
+            }
+          ],
+          "required_approvers": [
+            "Trưởng phòng Vận hành",
+            "Trưởng phòng Kinh doanh"
+          ],
+          "highest_authority_level": "Trưởng phòng (KD/KT/VH)"
+        }
+      },
+      "deliverables": {
+        "compliance_matrix": [
+          {
+            "type": "Hạng mục",
+            "requirement": "Switch Access 48-Port PoE+ Layer 3 (SL: 2)",
+            "proposed_solution": "TM-SW-ACC-POE-48-L3 - Switch Access/Dist 48-Port Gigabit PoE+ 740W Layer 3 Stackable",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (48 ports >= 48 ports, Hỗ trợ PoE+ 740W, Định tuyến Layer 3 đầy đủ, Hỗ trợ Stacking)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Firewall NGFW (IPS >= 5.0 Gbps, HA) (SL: 2)",
+            "proposed_solution": "TM-FW-ENT-5G - Firewall NGFW Enterprise (IPS 5.5 Gbps, Hỗ trợ HA)",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (IPS 5.5 Gbps >= 5.0 Gbps, Hỗ trợ cụm HA)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN (SL: 1)",
+            "proposed_solution": "TM-SRV-DEPLOY-SEC - Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng) (SL: 1)",
+            "proposed_solution": "TM-MNT-24X7-4H - Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (SLA 24x7 phản hồi 4h)."
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Bắt buộc cung cấp đầy đủ CO/CQ chính hãng",
+            "proposed_solution": "MAND-COCQ",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Phần 3 - Lưu ý ngân sách & tiến độ] Ngân sách tối đa 460 triệu VND (chưa VAT). Lưu ý: Bên chúng tôi yêu cầu hoàn tất triển khai và nghiệm thu gấp trong vòng 10)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Switch bắt buộc cấp nguồn PoE+",
+            "proposed_solution": "MAND-POE",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch )"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Bắt buộc có cổng uplink 10G SFP+",
+            "proposed_solution": "MAND-10G",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch )"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Switch hỗ trợ định tuyến Layer 3 đầy đủ",
+            "proposed_solution": "MAND-L3",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch )"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Firewall bắt buộc thông lượng IPS >= 5 Gbps",
+            "proposed_solution": "MAND-IPS",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch )"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Firewall chạy cấu hình dự phòng HA",
+            "proposed_solution": "MAND-HA",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch )"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Bảo trì 24x7 với SLA ứng cứu trong 4 giờ",
+            "proposed_solution": "MAND-SLA-24X7",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: [Phần 2 - Hạng mục kỹ thuật bắt buộc]\n- 02 Firewall NGFW chạy cụm HA Active-Passive, bắt buộc thông lượng IPS tối thiểu 5 Gbps và có cổng 10G SFP+.\n- 02 Switch )"
+          },
+          {
+            "type": "Tiến độ & Vận hành",
+            "requirement": "Hoàn thành trong 10 ngày",
+            "proposed_solution": "Đề xuất 24 ngày",
+            "status": "CONFLICT",
+            "status_label": "XUNG ĐỘT LỊCH TRIỂN KHAI",
+            "evidence": "Cảnh báo lịch triển khai không khả thi đúng hạn 10 ngày! Đề xuất dời mốc giao hàng sang 24 ngày (tuần Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026) hoặc xin duyệt tăng ca/thuê ngoài."
+          }
+        ],
+        "data_boundary_checks": [
+          {
+            "department": "Kinh doanh (Commercial Boundary)",
+            "status": "REVIEW_REQUIRED",
+            "checks": [
+              "Đơn giá khớp 100% bảng giá chuẩn Thiên Minh (4 dòng).",
+              "Chiết khấu đề xuất: 2.19% (Chuẩn bậc: 2.19%).",
+              "Biên lợi nhuận gộp: 25.37%.",
+              "Tổng giá trước VAT nằm trong ngân sách khách hàng."
+            ]
+          },
+          {
+            "department": "Kỹ thuật (Technical Boundary)",
+            "status": "PASS",
+            "checks": [
+              "Đã kiểm tra chéo 7 điều kiện bắt buộc của RFP.",
+              "Đã tự động loại 4 gói giá thấp không đủ chức năng bắt buộc.",
+              "100% thiết bị thuộc danh mục chuẩn sẵn có."
+            ]
+          },
+          {
+            "department": "Vận hành (Operations Boundary)",
+            "status": "REVIEW_REQUIRED",
+            "checks": [
+              "Lead-time nhập hàng tối đa: 10 ngày; Nhu cầu nhân lực: 7 man-days.",
+              "Năng lực tuần hiện có trong khung thời hạn: 13 man-days.",
+              "Cảnh báo quá tải lịch triển khai/không kịp deadline nếu không điều chỉnh."
+            ]
+          }
+        ],
+        "proposal_summary": {
+          "proposal_code": "PROP-RFP-2026-1103",
+          "customer_name": "Công ty CP Fintech An Phát",
+          "location": "Quận 3, TP.HCM | TP.HCM",
+          "scale": "350 nhân sự",
+          "executive_overview": "Thiên Minh đề xuất giải pháp hạ tầng mạng và bảo mật đồng bộ cho Công ty CP Fintech An Phát, đảm bảo đáp ứng đầy đủ 7 điều kiện kỹ thuật & pháp lý bắt buộc, loại bỏ rủi ro thiếu hụt tính năng và kiểm soát chặt tiến độ bàn giao.",
+          "implementation_plan": [
+            {
+              "phase": "Giai đoạn 1 (Tuần 1)",
+              "activity": "Khảo sát hiện trạng chi tiết, chốt kiến trúc LLD & đặt hàng thiết bị chính hãng (CO/CQ)."
+            },
+            {
+              "phase": "Giai đoạn 2 (Tuần 2-3)",
+              "activity": "Pre-staging cấu hình thiết bị tại Lab Thiên Minh, kiểm thử HA/VLAN/PoE trước khi mang ra site."
+            },
+            {
+              "phase": "Giai đoạn 3 (Tuần 4+)",
+              "activity": "Lắp đặt tận nơi, đấu nối hệ thống, test nghiệm thu UAT và chuyển giao tài liệu As-Built (Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026)."
+            }
+          ],
+          "risk_highlights": [
+            "Đã chặn 4 cấu hình giá thấp không đủ tính năng (PoE/Layer 3/IPS/HA/SLA).",
+            "Cảnh báo lịch triển khai không khả thi đúng hạn 10 ngày! Đề xuất dời mốc giao hàng sang 24 ngày (tuần Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026) hoặc xin duyệt tăng ca/thuê ngoài."
+          ],
+          "revision_history": [
+
+          ]
+        },
+        "draft_quotation": {
+          "quote_number": "QT-RFP-2026-1103",
+          "issue_date": "2026-11-12",
+          "validity_days": 30,
+          "seller": {
+            "name": "Công ty Cổ phần Công nghệ & Hạ tầng Thiên Minh",
+            "short_name": "Thiên Minh Company",
+            "tax_code": "0315889922",
+            "address": "Tầng 8, Tòa nhà TechHub, Quận 1, TP. Hồ Chí Minh",
+            "hotline": "1900 6889",
+            "email": "sales@thienminhtech.vn"
+          },
+          "buyer": {
+            "name": "Công ty CP Fintech An Phát",
+            "location": "Quận 3, TP.HCM | TP.HCM"
+          },
+          "items": [
+            {
+              "item_id": "ITEM-1",
+              "sku": "TM-SW-ACC-POE-48-L3",
+              "name": "Switch Access/Dist 48-Port Gigabit PoE+ 740W Layer 3 Stackable",
+              "category": "Access Switch",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 2,
+              "unit_price_vnd": 68000000,
+              "line_list_total_vnd": 136000000,
+              "line_cost_total_vnd": 104000000
+            },
+            {
+              "item_id": "ITEM-2",
+              "sku": "TM-FW-ENT-5G",
+              "name": "Firewall NGFW Enterprise (IPS 5.5 Gbps, Hỗ trợ HA)",
+              "category": "Firewall",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 2,
+              "unit_price_vnd": 118000000,
+              "line_list_total_vnd": 236000000,
+              "line_cost_total_vnd": 182000000
+            },
+            {
+              "item_id": "ITEM-3",
+              "sku": "TM-SRV-DEPLOY-SEC",
+              "name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+              "category": "Deployment Service",
+              "is_service": true,
+              "status": "MATCHED",
+              "unit": "Gói",
+              "quantity": 1,
+              "unit_price_vnd": 35000000,
+              "line_list_total_vnd": 35000000,
+              "line_cost_total_vnd": 19500000
+            },
+            {
+              "item_id": "ITEM-4",
+              "sku": "TM-MNT-24X7-4H",
+              "name": "Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+              "category": "Maintenance & SLA",
+              "is_service": true,
+              "status": "MATCHED",
+              "unit": "Gói/Năm",
+              "quantity": 1,
+              "unit_price_vnd": 54000000,
+              "line_list_total_vnd": 54000000,
+              "line_cost_total_vnd": 31000000
+            }
+          ],
+          "summary": {
+            "list_subtotal_vnd": 461000000,
+            "discount_pct": 2.19,
+            "discount_amount_vnd": 10095900,
+            "net_before_vat_vnd": 450904100,
+            "vat_rate_pct": 10.0,
+            "vat_amount_vnd": 45090410,
+            "grand_total_vnd": 495994510
+          },
+          "commercial_terms": [
+            "Thời gian giao hàng & triển khai: 24 ngày (đề xuất điều chỉnh theo năng lực thực tế).",
+            "Chứng từ kèm theo: Đầy đủ CO/CQ chính hãng từ Nhà sản xuất cho toàn bộ thiết bị.",
+            "Thanh toán: Đợt 1 tạm ứng 40% khi ký HĐ; Đợt 2 thanh toán 40% khi giao hàng; Đợt 3 thanh toán 20% sau nghiệm thu bàn giao.",
+            "Hiệu lực báo giá: 30 ngày kể từ ngày phát hành."
+          ]
+        }
+      },
+      "workflow_trace": [
+        {
+          "step": "RECEIVE",
+          "label": "1. Tiếp nhận yêu cầu chào giá (RFP/RFQ)",
+          "actor": "Hệ thống / Kinh doanh",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Đã tiếp nhận hồ sơ từ Cổng đấu thầu nội bộ (Phụ trách: Lê Hoàng Nam)."
+        },
+        {
+          "step": "EXTRACT",
+          "label": "2. [AI AGENT] Trích xuất & Phân rã yêu cầu",
+          "actor": "AI Agent (Offline Engine)",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Bóc tách được 4 hạng mục, 7 điều kiện bắt buộc. Phân tích bằng Offline NLP & Rule Engine (Hybrid sẵn sàng)."
+        },
+        {
+          "step": "COMPLETENESS_GATE",
+          "label": "3. Cổng kiểm tra: Có đủ thông tin?",
+          "actor": "AI Agent Gatekeeper",
+          "status": "DONE",
+          "decision": "CÓ",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Đạt 100/100 điểm đầy đủ thông tin. Tiếp tục đối chiếu kỹ thuật & vận hành."
+        },
+        {
+          "step": "MATCH_FEASIBILITY",
+          "label": "4. [AI AGENT] Đối chiếu giải pháp, năng lực & lịch triển khai",
+          "actor": "AI Agent + Dữ liệu KT & Vận hành",
+          "status": "WARNING",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Khớp 4 hạng mục; chặn 4 gói giá thấp sai chức năng; ngoài danh mục: Không; lịch triển khai: Cảnh báo xung đột."
+        },
+        {
+          "step": "PRICING",
+          "label": "5. [AI AGENT] Tính toán giá đề xuất & áp dụng chính sách chiết khấu",
+          "actor": "AI Agent Pricing Engine",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Tổng trước VAT: 450.904.100 VND (Chiết khấu 2.19%, Biên LN 25.37%)."
+        },
+        {
+          "step": "AUTHORITY_GATE",
+          "label": "6. Kiểm tra vượt thẩm quyền / Chiết khấu đặc biệt / Ngoài danh mục?",
+          "actor": "AI Agent Policy Gate",
+          "status": "ESCALATED",
+          "decision": "CÓ",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Kích hoạt chuyển duyệt (Trưởng phòng (KD/KT/VH)): ESC-SCHED-OPS."
+        },
+        {
+          "step": "ASSEMBLE_PROPOSAL",
+          "label": "7. Hợp nhất tài liệu: Hồ sơ đề xuất, Ma trận đáp ứng & Dự thảo chào giá",
+          "actor": "AI Agent Document Builder",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Đã tạo Ma trận đáp ứng (12 dòng), Kiểm tra ranh giới 3 phòng ban & Dự thảo báo giá QT-RFP-2026-1103."
+        }
+      ],
+      "hitl": {
+        "escalation_approved": false,
+        "escalation_approver": null,
+        "escalation_comment": null,
+        "dept_signoffs": {
+          "sales": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          },
+          "technical": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          },
+          "operations": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          }
+        }
+      }
+    },
+    {
+      "id": "RFP-2026-1104",
+      "title": "Triển khai SD-WAN & Wi-Fi 12 chi nhánh + Kho lạnh - Chuỗi Bán lẻ SunMart",
+      "raw_text": "YÊU CẦU CHÀO GIÁ CHUỖI SIÊU THỊ SUNMART (12 CHI NHÁNH MIỀN NAM)\n\n1. Hạng mục thiết bị cho 12 chi nhánh:\n- 12 Thiết bị SD-WAN chi nhánh hỗ trợ Dual WAN và 4G failover.\n- 24 Access Point Wi-Fi 6 doanh nghiệp (2 AP/chi nhánh) kèm 12 Switch Access 24 port PoE+ 370W.\n- Đặc biệt tại 03 kho đông lạnh ngoài trời: yêu cầu 03 Switch công nghiệp chống bụi nước chuẩn IP67 hoạt động ở nhiệt độ -20°C (thiết bị chuyên dụng ngoài danh mục phổ thông).\n\n2. Dịch vụ & Bảo trì:\n- Dịch vụ triển khai chuẩn hóa cho 12 chi nhánh và thiết kế SD-WAN kết nối về trụ sở chính.\n- Gói bảo trì 24x7 SLA 4 giờ.\n\n3. Điều kiện thương mại & tiến độ:\n- Thời hạn triển khai: 6 tuần (hoàn tất trước 24/12/2026).\n- Ngân sách mục tiêu: 1.65 tỷ VND (chưa VAT). Do mua số lượng lớn, SunMart đề nghị mức chiết khấu đặc biệt 14% trên tổng đơn hàng.\n- Điều khoản bắt buộc: CO/CQ đầy đủ và điều khoản phạt chậm tiến độ 1%/tuần.",
+      "channel": "Hồ sơ mời chào giá (RFQ)",
+      "sales_owner": "Nguyễn Minh Tuấn",
+      "received_date": "2026-11-09",
+      "expected_scenario": "Vượt thẩm quyền chiết khấu (14% > 10%), có thiết bị ngoài danh mục (Switch công nghiệp IP67), và có điều khoản phạt chậm tiến độ -> Chuyển duyệt Ban Giám đốc + Trưởng phòng Kỹ thuật",
+      "status": "READY_FOR_HITL_REVIEW",
+      "triage_category": "ĐÃ DUYỆT CẤP TRÊN — CHỜ THẨM ĐỊNH CUỐI",
+      "current_node": "HITL_FINAL_REVIEW",
+      "clarifications": [
+
+      ],
+      "revision_notes": [
+
+      ],
+      "audit_log": [
+        {
+          "at": "2026-11-12T13:15:54+07:00",
+          "type": "CREATED",
+          "message": "Tiếp nhận yêu cầu chào giá RFP-2026-1104 qua Hồ sơ mời chào giá (RFQ)."
+        },
+        {
+          "at": "2026-11-12T13:15:54+07:00",
+          "type": "AI_RUN",
+          "message": "AI Agent hoàn tất phân tích. Trạng thái: CẦN CHUYỂN DUYỆT (VƯỢT THẨM QUYỀN / RỦI RO)."
+        },
+        {
+          "at": "2026-11-13T08:03:02+07:00",
+          "type": "AI_RUN",
+          "message": "AI Agent hoàn tất phân tích. Trạng thái: CẦN CHUYỂN DUYỆT (VƯỢT THẨM QUYỀN / RỦI RO)."
+        },
+        {
+          "at": "2026-11-13T08:03:02+07:00",
+          "type": "ESCALATION_APPROVED",
+          "message": "Trần Minh Quân (Ban Giám đốc) đã PHÊ DUYỆT chuyển cấp. Ghi chú: Đồng ý phương án đề xuất."
+        }
+      ],
+      "created_at": "2026-11-12T13:15:54+07:00",
+      "updated_at": "2026-11-13T08:03:02+07:00",
+      "extracted": {
+        "customer_name": "CHUỖI SIÊU THỊ SUNMART",
+        "location": "MIỀN NAM | 12 CHI NHÁNH MIỀN NAM)",
+        "scale_summary": "12 CHI NHÁNH",
+        "deadline": {
+          "raw_text": "6 tuần - trước 24/12/2026",
+          "duration_days": 42,
+          "target_date": "2026-12-24"
+        },
+        "budget": {
+          "amount_vnd": 1650000000,
+          "vat_excluded": true,
+          "raw_text": "1.65 tỷ VND"
+        },
+        "requested_discount_pct": 14.0,
+        "items": [
+          {
+            "name": "Switch công nghiệp chống bụi nước chuẩn IP67",
+            "category": "Out-of-Catalog",
+            "quantity": 3,
+            "quantity_ambiguous": false,
+            "mandatory_specs": {
+              "industrial_ip67": true
+            },
+            "spec_notes": "Hoạt động môi trường khắc nghiệt -20°C / IP67 (ngoài danh mục chuẩn)",
+            "source_excerpt": "- Đặc biệt tại 03 kho đông lạnh ngoài trời: yêu cầu 03 Switch công nghiệp chống bụi nước chuẩn IP67 hoạt động ở nhiệt độ -20°C (thiết bị chuyên dụng ngoài danh mục phổ thông).",
+            "item_id": "ITEM-1"
+          },
+          {
+            "name": "Switch Access 24-Port PoE+",
+            "category": "Access Switch",
+            "quantity": 12,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "ports": 24,
+              "poe": true,
+              "uplink_10g": false,
+              "layer3": false,
+              "stacking": false
+            },
+            "spec_notes": "- 24 Access Point Wi-Fi 6 doanh nghiệp (2 AP/chi nhánh) kèm 12 Switch Access 24 port PoE+ 370W.",
+            "source_excerpt": "- 24 Access Point Wi-Fi 6 doanh nghiệp (2 AP/chi nhánh) kèm 12 Switch Access 24 port PoE+ 370W.",
+            "item_id": "ITEM-2"
+          },
+          {
+            "name": "Access Point Wi-Fi 6 Enterprise",
+            "category": "Wireless",
+            "quantity": 24,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "high_density_wifi": true,
+              "seamless_roaming": false,
+              "poe": true
+            },
+            "spec_notes": "- 24 Access Point Wi-Fi 6 doanh nghiệp (2 AP/chi nhánh) kèm 12 Switch Access 24 port PoE+ 370W.",
+            "source_excerpt": "- 24 Access Point Wi-Fi 6 doanh nghiệp (2 AP/chi nhánh) kèm 12 Switch Access 24 port PoE+ 370W.",
+            "item_id": "ITEM-3"
+          },
+          {
+            "name": "Thiết bị SD-WAN chi nhánh (Dual WAN + 4G Failover)",
+            "category": "SD-WAN / Router",
+            "quantity": 12,
+            "quantity_ambiguous": false,
+            "mandatory_specs": {
+              "sdwan": true
+            },
+            "spec_notes": "- 12 Thiết bị SD-WAN chi nhánh hỗ trợ Dual WAN và 4G failover.",
+            "source_excerpt": "- 12 Thiết bị SD-WAN chi nhánh hỗ trợ Dual WAN và 4G failover.",
+            "item_id": "ITEM-4"
+          },
+          {
+            "name": "Dịch vụ triển khai chuẩn hóa 12 chi nhánh & SD-WAN",
+            "category": "Deployment Service",
+            "quantity": 12,
+            "quantity_ambiguous": false,
+            "mandatory_specs": {
+              "branch_rollout": true
+            },
+            "spec_notes": "Rollout 12 chi nhánh",
+            "source_excerpt": "YÊU CẦU CHÀO GIÁ CHUỖI SIÊU THỊ SUNMART (12 CHI NHÁNH MIỀN NAM)",
+            "item_id": "ITEM-5"
+          },
+          {
+            "name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "category": "Deployment Service",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "mandatory_specs": {
+              "ha_failover_test": true
+            },
+            "spec_notes": "Thiết kế kiến trúc bảo mật, cấu hình HA/IPS/VPN & nghiệm thu",
+            "source_excerpt": "1. Hạng mục thiết bị cho 12 chi nhánh:\n- 12 Thiết bị SD-WAN chi nhánh hỗ trợ Dual WAN và 4G failover.\n- 24 Access Point Wi-Fi 6 doanh nghiệp (2 AP/chi nhánh) kè",
+            "item_id": "ITEM-6"
+          },
+          {
+            "name": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng)",
+            "category": "Maintenance & SLA",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "sla_24x7": true,
+              "response_hours": 4,
+              "duration_months": 12
+            },
+            "spec_notes": "2. Dịch vụ & Bảo trì:\n- Dịch vụ triển khai chuẩn hóa cho 12 chi nhánh và thiết kế SD-WAN kết nối về trụ sở chính.\n- Gói bảo trì 24x7 SLA 4 giờ.",
+            "source_excerpt": "2. Dịch vụ & Bảo trì:\n- Dịch vụ triển khai chuẩn hóa cho 12 chi nhánh và thiết kế SD-WAN kết nối về trụ sở chính.\n- Gói bảo trì 24x7 SLA 4 giờ.",
+            "item_id": "ITEM-7"
+          }
+        ],
+        "mandatory_conditions": [
+          {
+            "code": "MAND-COCQ",
+            "label": "Bắt buộc cung cấp đầy đủ CO/CQ chính hãng",
+            "source_excerpt": "3. Điều kiện thương mại & tiến độ:\n- Thời hạn triển khai: 6 tuần (hoàn tất trước 24/12/2026).\n- Ngân sách mục tiêu: 1.65 tỷ VND (chưa VAT). Do mua số lượng lớn,"
+          },
+          {
+            "code": "MAND-POE",
+            "label": "Switch bắt buộc cấp nguồn PoE+",
+            "source_excerpt": "1. Hạng mục thiết bị cho 12 chi nhánh:\n- 12 Thiết bị SD-WAN chi nhánh hỗ trợ Dual WAN và 4G failover.\n- 24 Access Point Wi-Fi 6 doanh nghiệp (2 AP/chi nhánh) kè"
+          },
+          {
+            "code": "MAND-SLA-24X7",
+            "label": "Bảo trì 24x7 với SLA ứng cứu trong 4 giờ",
+            "source_excerpt": "2. Dịch vụ & Bảo trì:\n- Dịch vụ triển khai chuẩn hóa cho 12 chi nhánh và thiết kế SD-WAN kết nối về trụ sở chính.\n- Gói bảo trì 24x7 SLA 4 giờ."
+          },
+          {
+            "code": "MAND-PENALTY",
+            "label": "Điều khoản phạt chậm tiến độ hợp đồng",
+            "source_excerpt": "3. Điều kiện thương mại & tiến độ:\n- Thời hạn triển khai: 6 tuần (hoàn tất trước 24/12/2026).\n- Ngân sách mục tiêu: 1.65 tỷ VND (chưa VAT). Do mua số lượng lớn,"
+          },
+          {
+            "code": "MAND-IP67",
+            "label": "Thiết bị công nghiệp chuẩn IP67 (-20°C) cho kho lạnh",
+            "source_excerpt": "1. Hạng mục thiết bị cho 12 chi nhánh:\n- 12 Thiết bị SD-WAN chi nhánh hỗ trợ Dual WAN và 4G failover.\n- 24 Access Point Wi-Fi 6 doanh nghiệp (2 AP/chi nhánh) kè"
+          }
+        ],
+        "segments": [
+          {
+            "index": 1,
+            "text": "YÊU CẦU CHÀO GIÁ CHUỖI SIÊU THỊ SUNMART (12 CHI NHÁNH MIỀN NAM)"
+          },
+          {
+            "index": 2,
+            "text": "1. Hạng mục thiết bị cho 12 chi nhánh:\n- 12 Thiết bị SD-WAN chi nhánh hỗ trợ Dual WAN và 4G failover.\n- 24 Access Point Wi-Fi 6 doanh nghiệp (2 AP/chi nhánh) kèm 12 Switch Access 24 port PoE+ 370W.\n- Đặc biệt tại 03 kho đông lạnh ngoài trời: yêu cầu 03 Switch công nghiệp chống bụi nước chuẩn IP67 hoạt động ở nhiệt độ -20°C (thiết bị chuyên dụng ngoài danh mục phổ thông)."
+          },
+          {
+            "index": 3,
+            "text": "2. Dịch vụ & Bảo trì:\n- Dịch vụ triển khai chuẩn hóa cho 12 chi nhánh và thiết kế SD-WAN kết nối về trụ sở chính.\n- Gói bảo trì 24x7 SLA 4 giờ."
+          },
+          {
+            "index": 4,
+            "text": "3. Điều kiện thương mại & tiến độ:\n- Thời hạn triển khai: 6 tuần (hoàn tất trước 24/12/2026).\n- Ngân sách mục tiêu: 1.65 tỷ VND (chưa VAT). Do mua số lượng lớn, SunMart đề nghị mức chiết khấu đặc biệt 14% trên tổng đơn hàng.\n- Điều khoản bắt buộc: CO/CQ đầy đủ và điều khoản phạt chậm tiến độ 1%/tuần."
+          }
+        ],
+        "ambiguous_points": [
+
+        ]
+      },
+      "completeness_gate": {
+        "is_complete": true,
+        "decision": "CÓ ĐỦ THÔNG TIN",
+        "completeness_score": 100,
+        "blocking_count": 0,
+        "warning_count": 0,
+        "missing_fields": [
+
+        ],
+        "clarification_email_draft": null
+      },
+      "feasibility": {
+        "matched_items": [
+          {
+            "item_id": "ITEM-1",
+            "requested_name": "Switch công nghiệp chống bụi nước chuẩn IP67",
+            "category": "Out-of-Catalog",
+            "quantity": 3,
+            "status": "OUT_OF_CATALOG",
+            "selected_sku": "EXT-NONCATALOG-IP67",
+            "selected_name": "Switch công nghiệp chống bụi nước chuẩn IP67 (Cần báo giá NCC ngoài)",
+            "vendor": "Nhà cung cấp chuyên dụng (Đề xuất Moxa / Hirschmann)",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 32000000,
+            "cost_vnd": 24500000,
+            "lead_time_days": 21,
+            "man_days": 2,
+            "required_roles": [
+              "Network Engineer",
+              "Field Technician"
+            ],
+            "compliance_notes": "Không nằm trong danh mục chuẩn Thiên Minh; cần Kỹ thuật xác nhận model & Ban Giám đốc phê duyệt.",
+            "passed_checks": [
+
+            ],
+            "failed_checks": [
+              "Không có trong danh mục chuẩn Thiên Minh"
+            ]
+          },
+          {
+            "item_id": "ITEM-2",
+            "requested_name": "Switch Access 24-Port PoE+",
+            "category": "Access Switch",
+            "quantity": 12,
+            "status": "MATCHED",
+            "selected_sku": "TM-SW-ACC-POE-24",
+            "selected_name": "Switch Access 24-Port Gigabit PoE+ 370W L2+",
+            "vendor": "Aruba / Cisco Catalyst 1200",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 24500000,
+            "cost_vnd": 18500000,
+            "lead_time_days": 7,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (24 ports >= 24 ports, Hỗ trợ PoE+ 370W).",
+            "passed_checks": [
+              "24 ports >= 24 ports",
+              "Hỗ trợ PoE+ 370W"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-3",
+            "requested_name": "Access Point Wi-Fi 6 Enterprise",
+            "category": "Wireless",
+            "quantity": 24,
+            "status": "MATCHED",
+            "selected_sku": "TM-AP-WIFI6-PRO",
+            "selected_name": "Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+            "vendor": "Aruba AP-515 / Cisco Catalyst 9120",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 14500000,
+            "cost_vnd": 10800000,
+            "lead_time_days": 7,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Chịu tải 250 clients/AP).",
+            "passed_checks": [
+              "Chịu tải 250 clients/AP"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-4",
+            "requested_name": "Thiết bị SD-WAN chi nhánh (Dual WAN + 4G Failover)",
+            "category": "SD-WAN / Router",
+            "quantity": 12,
+            "status": "MATCHED",
+            "selected_sku": "TM-SDWAN-BR",
+            "selected_name": "Thiết bị SD-WAN Chi nhánh (Dual WAN + 4G/LTE Failover)",
+            "vendor": "FortiGate 40F / Cisco Meraki MX68",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 18500000,
+            "cost_vnd": 14000000,
+            "lead_time_days": 7,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Đáp ứng tiêu chuẩn cơ bản).",
+            "passed_checks": [
+              "Đáp ứng tiêu chuẩn cơ bản"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-5",
+            "requested_name": "Dịch vụ triển khai chuẩn hóa 12 chi nhánh & SD-WAN",
+            "category": "Deployment Service",
+            "quantity": 12,
+            "status": "MATCHED",
+            "selected_sku": "TM-SRV-DEPLOY-BRANCH",
+            "selected_name": "Dịch vụ triển khai chuẩn hóa theo Chi nhánh (Rollout/Site)",
+            "vendor": "Thiên Minh Services",
+            "unit": "Chi nhánh",
+            "unit_price_vnd": 8500000,
+            "cost_vnd": 5000000,
+            "lead_time_days": 2,
+            "man_days": 24,
+            "required_roles": [
+              "Field Technician",
+              "Network Engineer"
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai).",
+            "passed_checks": [
+              "Đúng phạm vi dịch vụ triển khai"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-6",
+            "requested_name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "category": "Deployment Service",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-SRV-DEPLOY-SEC",
+            "selected_name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "vendor": "Thiên Minh Services",
+            "unit": "Gói",
+            "unit_price_vnd": 35000000,
+            "cost_vnd": 19500000,
+            "lead_time_days": 5,
+            "man_days": 7,
+            "required_roles": [
+              "Security Engineer",
+              "Network Architect"
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai).",
+            "passed_checks": [
+              "Đúng phạm vi dịch vụ triển khai"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-7",
+            "requested_name": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng)",
+            "category": "Maintenance & SLA",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-MNT-24X7-4H",
+            "selected_name": "Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+            "vendor": "Thiên Minh Support",
+            "unit": "Gói/Năm",
+            "unit_price_vnd": 54000000,
+            "cost_vnd": 31000000,
+            "lead_time_days": 1,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (SLA 24x7 phản hồi 4h).",
+            "passed_checks": [
+              "SLA 24x7 phản hồi 4h"
+            ],
+            "failed_checks": [
+
+            ]
+          }
+        ],
+        "rejected_low_price_traps": [
+          {
+            "item_id": "ITEM-2",
+            "requested_item": "Switch Access 24-Port PoE+",
+            "rejected_sku": "TM-SW-ACC-L2-24",
+            "rejected_name": "Switch Access 24-Port Gigabit L2 (Entry)",
+            "rejected_unit_price_vnd": 9500000,
+            "failed_reasons": [
+              "Không hỗ trợ cấp nguồn PoE+"
+            ]
+          },
+          {
+            "item_id": "ITEM-3",
+            "requested_item": "Access Point Wi-Fi 6 Enterprise",
+            "rejected_sku": "TM-AP-WIFI6-STD",
+            "rejected_name": "Access Point Wi-Fi 6 Standard 2x2 (Văn phòng nhẹ)",
+            "rejected_unit_price_vnd": 5800000,
+            "failed_reasons": [
+              "Chỉ chịu tải 80 clients/AP (không đạt chuẩn chịu tải cao >= 200)"
+            ]
+          },
+          {
+            "item_id": "ITEM-7",
+            "requested_item": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng)",
+            "rejected_sku": "TM-MNT-8X5",
+            "rejected_name": "Gói bảo trì & hỗ trợ kỹ thuật tiêu chuẩn 8x5 (SLA phản hồi 8h) / 12 tháng",
+            "rejected_unit_price_vnd": 24000000,
+            "failed_reasons": [
+              "Chỉ hỗ trợ giờ hành chính 8x5 (8h), KHÔNG đạt yêu cầu 24x7 SLA 4h"
+            ]
+          }
+        ],
+        "has_out_of_catalog": true,
+        "out_of_catalog_items": [
+          {
+            "item_id": "ITEM-1",
+            "requested_name": "Switch công nghiệp chống bụi nước chuẩn IP67",
+            "category": "Out-of-Catalog",
+            "quantity": 3,
+            "status": "OUT_OF_CATALOG",
+            "selected_sku": "EXT-NONCATALOG-IP67",
+            "selected_name": "Switch công nghiệp chống bụi nước chuẩn IP67 (Cần báo giá NCC ngoài)",
+            "vendor": "Nhà cung cấp chuyên dụng (Đề xuất Moxa / Hirschmann)",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 32000000,
+            "cost_vnd": 24500000,
+            "lead_time_days": 21,
+            "man_days": 2,
+            "required_roles": [
+              "Network Engineer",
+              "Field Technician"
+            ],
+            "compliance_notes": "Không nằm trong danh mục chuẩn Thiên Minh; cần Kỹ thuật xác nhận model & Ban Giám đốc phê duyệt.",
+            "passed_checks": [
+
+            ],
+            "failed_checks": [
+              "Không có trong danh mục chuẩn Thiên Minh"
+            ]
+          }
+        ],
+        "schedule_check": {
+          "feasible": true,
+          "requested_days": 42,
+          "required_min_days": 37,
+          "earliest_feasible_days": 41,
+          "max_hardware_lead_days": 21,
+          "estimated_man_days": 33,
+          "available_man_days_in_window": 164,
+          "window_weeks": [
+            {
+              "week_id": "2026-W46",
+              "label": "Tuần 12/11 - 18/11/2026 (Hiện tại)",
+              "start_date": "2026-11-12",
+              "end_date": "2026-11-18",
+              "allocated_projects": 6,
+              "utilization_pct": 95,
+              "available_man_days": 3,
+              "active_commitments": [
+                "Ngân hàng Á Đông (Cutover)",
+                "KCN Tân Bình (Core Switch)",
+                "Cảng Cát Lái (Wi-Fi)"
+              ],
+              "status": "OVERLOADED"
+            },
+            {
+              "week_id": "2026-W47",
+              "label": "Tuần 19/11 - 25/11/2026",
+              "start_date": "2026-11-19",
+              "end_date": "2026-11-25",
+              "allocated_projects": 5,
+              "utilization_pct": 86,
+              "available_man_days": 10,
+              "active_commitments": [
+                "Ngân hàng Á Đông (UAT)",
+                "Chuỗi GymFit (SD-WAN)"
+              ],
+              "status": "TIGHT"
+            },
+            {
+              "week_id": "2026-W48",
+              "label": "Tuần 26/11 - 02/12/2026",
+              "start_date": "2026-11-26",
+              "end_date": "2026-12-02",
+              "allocated_projects": 3,
+              "utilization_pct": 58,
+              "available_man_days": 28,
+              "active_commitments": [
+                "Bảo trì định kỳ Q4"
+              ],
+              "status": "AVAILABLE"
+            },
+            {
+              "week_id": "2026-W49",
+              "label": "Tuần 03/12 - 09/12/2026",
+              "start_date": "2026-12-03",
+              "end_date": "2026-12-09",
+              "allocated_projects": 2,
+              "utilization_pct": 42,
+              "available_man_days": 38,
+              "active_commitments": [
+                "Tòa nhà Landmark Hub (Phase 1)"
+              ],
+              "status": "AVAILABLE"
+            },
+            {
+              "week_id": "2026-W50",
+              "label": "Tuần 10/12 - 16/12/2026",
+              "start_date": "2026-12-10",
+              "end_date": "2026-12-16",
+              "allocated_projects": 2,
+              "utilization_pct": 40,
+              "available_man_days": 40,
+              "active_commitments": [
+                "Hỗ trợ vận hành thường xuyên"
+              ],
+              "status": "AVAILABLE"
+            },
+            {
+              "week_id": "2026-W51",
+              "label": "Tuần 17/12 - 23/12/2026",
+              "start_date": "2026-12-17",
+              "end_date": "2026-12-23",
+              "allocated_projects": 1,
+              "utilization_pct": 30,
+              "available_man_days": 45,
+              "active_commitments": [
+                "Bảo trì định kỳ cuối năm"
+              ],
+              "status": "AVAILABLE"
+            }
+          ],
+          "recommended_weeks": [
+            "Tuần 26/11 - 02/12/2026",
+            "Tuần 03/12 - 09/12/2026"
+          ],
+          "conflict_reasons": [
+
+          ],
+          "recommendation": "Đủ năng lực & lịch triển khai phù hợp trong các tuần: Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026."
+        },
+        "certification_check": {
+          "required_by_rfp": false,
+          "available_certifications": [
+            "CCIE Enterprise",
+            "Aruba ACDX",
+            "CCNP",
+            "Aruba ACMP",
+            "Fortinet NSE4/NSE5",
+            "PCNSA",
+            "Cabling & Rack Ops",
+            "Safety Cert"
+          ],
+          "satisfied": true,
+          "note": "Đội ngũ Thiên Minh có sẵn kỹ sư CCIE, CCNP, Aruba ACMP, Fortinet NSE4/NSE5 đáp ứng."
+        },
+        "technical_feasible": false,
+        "operational_feasible": true,
+        "overall_feasible": false
+      },
+      "pricing": {
+        "applied_tier": {
+          "tier_id": "TIER-2",
+          "name": "Gói dự án 500 triệu – < 1.5 tỷ",
+          "min_amount_vnd": 500000000,
+          "max_amount_vnd": 1499999999,
+          "standard_hardware_discount_pct": 4.0,
+          "standard_service_discount_pct": 6.0,
+          "description": "Chiết khấu gói tích hợp thiết bị + triển khai."
+        },
+        "line_items": [
+          {
+            "item_id": "ITEM-1",
+            "sku": "EXT-NONCATALOG-IP67",
+            "name": "Switch công nghiệp chống bụi nước chuẩn IP67 (Cần báo giá NCC ngoài)",
+            "category": "Out-of-Catalog",
+            "is_service": false,
+            "status": "OUT_OF_CATALOG",
+            "unit": "Thiết bị",
+            "quantity": 3,
+            "unit_price_vnd": 32000000,
+            "line_list_total_vnd": 96000000,
+            "line_cost_total_vnd": 73500000
+          },
+          {
+            "item_id": "ITEM-2",
+            "sku": "TM-SW-ACC-POE-24",
+            "name": "Switch Access 24-Port Gigabit PoE+ 370W L2+",
+            "category": "Access Switch",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 12,
+            "unit_price_vnd": 24500000,
+            "line_list_total_vnd": 294000000,
+            "line_cost_total_vnd": 222000000
+          },
+          {
+            "item_id": "ITEM-3",
+            "sku": "TM-AP-WIFI6-PRO",
+            "name": "Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+            "category": "Wireless",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 24,
+            "unit_price_vnd": 14500000,
+            "line_list_total_vnd": 348000000,
+            "line_cost_total_vnd": 259200000
+          },
+          {
+            "item_id": "ITEM-4",
+            "sku": "TM-SDWAN-BR",
+            "name": "Thiết bị SD-WAN Chi nhánh (Dual WAN + 4G/LTE Failover)",
+            "category": "SD-WAN / Router",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 12,
+            "unit_price_vnd": 18500000,
+            "line_list_total_vnd": 222000000,
+            "line_cost_total_vnd": 168000000
+          },
+          {
+            "item_id": "ITEM-5",
+            "sku": "TM-SRV-DEPLOY-BRANCH",
+            "name": "Dịch vụ triển khai chuẩn hóa theo Chi nhánh (Rollout/Site)",
+            "category": "Deployment Service",
+            "is_service": true,
+            "status": "MATCHED",
+            "unit": "Chi nhánh",
+            "quantity": 12,
+            "unit_price_vnd": 8500000,
+            "line_list_total_vnd": 102000000,
+            "line_cost_total_vnd": 60000000
+          },
+          {
+            "item_id": "ITEM-6",
+            "sku": "TM-SRV-DEPLOY-SEC",
+            "name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "category": "Deployment Service",
+            "is_service": true,
+            "status": "MATCHED",
+            "unit": "Gói",
+            "quantity": 1,
+            "unit_price_vnd": 35000000,
+            "line_list_total_vnd": 35000000,
+            "line_cost_total_vnd": 19500000
+          },
+          {
+            "item_id": "ITEM-7",
+            "sku": "TM-MNT-24X7-4H",
+            "name": "Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+            "category": "Maintenance & SLA",
+            "is_service": true,
+            "status": "MATCHED",
+            "unit": "Gói/Năm",
+            "quantity": 1,
+            "unit_price_vnd": 54000000,
+            "line_list_total_vnd": 54000000,
+            "line_cost_total_vnd": 31000000
+          }
+        ],
+        "list_subtotal_vnd": 1151000000,
+        "standard_discount_pct": 4.33,
+        "proposed_discount_pct": 14.0,
+        "discount_amount_vnd": 161140000,
+        "discount_reason": "Khách hàng yêu cầu chiết khấu đặc biệt 14.0% (vượt mức chuẩn 4.33%).",
+        "net_before_vat_vnd": 989860000,
+        "vat_rate_pct": 10.0,
+        "vat_amount_vnd": 98986000,
+        "grand_total_vnd": 1088846000,
+        "estimated_cost_vnd": 833200000,
+        "gross_profit_vnd": 156660000,
+        "gross_margin_pct": 15.83,
+        "customer_budget_vnd": 1650000000,
+        "within_budget": true,
+        "budget_gap_vnd": -660140000,
+        "authority_gate": {
+          "needs_escalation": true,
+          "decision": "CÓ VƯỢT THẨM QUYỀN / CẦN PHÊ DUYỆT",
+          "triggers": [
+            {
+              "code": "ESC-DISC-EXEC",
+              "severity": "HIGH",
+              "reason": "Chiết khấu đề xuất 14.0% vượt hạn mức Trưởng phòng (10.0%).",
+              "approver": "Ban Giám đốc"
+            },
+            {
+              "code": "ESC-MARGIN-MGR",
+              "severity": "MEDIUM",
+              "reason": "Biên lợi nhuận gộp 15.83% dưới chuẩn NVKD (18.0%).",
+              "approver": "Trưởng phòng Kinh doanh"
+            },
+            {
+              "code": "ESC-OUT-OF-CAT",
+              "severity": "HIGH",
+              "reason": "Có thiết bị/yêu cầu ngoài danh mục chuẩn: Switch công nghiệp chống bụi nước chuẩn IP67.",
+              "approver": "Trưởng phòng Kỹ thuật & Ban Giám đốc"
+            },
+            {
+              "code": "ESC-PENALTY-TERM",
+              "severity": "MEDIUM",
+              "reason": "Hồ sơ có điều khoản phạt chậm tiến độ hợp đồng — cần rà soát rủi ro trước khi cam kết.",
+              "approver": "Trưởng phòng Kinh doanh & Ban Giám đốc"
+            }
+          ],
+          "required_approvers": [
+            "Ban Giám đốc",
+            "Trưởng phòng Kinh doanh",
+            "Trưởng phòng Kỹ thuật"
+          ],
+          "highest_authority_level": "Ban Giám đốc"
+        }
+      },
+      "deliverables": {
+        "compliance_matrix": [
+          {
+            "type": "Hạng mục",
+            "requirement": "Switch công nghiệp chống bụi nước chuẩn IP67 (SL: 3)",
+            "proposed_solution": "EXT-NONCATALOG-IP67 - Switch công nghiệp chống bụi nước chuẩn IP67 (Cần báo giá NCC ngoài)",
+            "status": "OUT_OF_CATALOG",
+            "status_label": "NGOÀI DANH MỤC (Cần xác nhận NCC & duyệt)",
+            "evidence": "Không nằm trong danh mục chuẩn Thiên Minh; cần Kỹ thuật xác nhận model & Ban Giám đốc phê duyệt."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Switch Access 24-Port PoE+ (SL: 12)",
+            "proposed_solution": "TM-SW-ACC-POE-24 - Switch Access 24-Port Gigabit PoE+ 370W L2+",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (24 ports >= 24 ports, Hỗ trợ PoE+ 370W)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Access Point Wi-Fi 6 Enterprise (SL: 24)",
+            "proposed_solution": "TM-AP-WIFI6-PRO - Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Chịu tải 250 clients/AP)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Thiết bị SD-WAN chi nhánh (Dual WAN + 4G Failover) (SL: 12)",
+            "proposed_solution": "TM-SDWAN-BR - Thiết bị SD-WAN Chi nhánh (Dual WAN + 4G/LTE Failover)",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Đáp ứng tiêu chuẩn cơ bản)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Dịch vụ triển khai chuẩn hóa 12 chi nhánh & SD-WAN (SL: 12)",
+            "proposed_solution": "TM-SRV-DEPLOY-BRANCH - Dịch vụ triển khai chuẩn hóa theo Chi nhánh (Rollout/Site)",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN (SL: 1)",
+            "proposed_solution": "TM-SRV-DEPLOY-SEC - Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng) (SL: 1)",
+            "proposed_solution": "TM-MNT-24X7-4H - Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (SLA 24x7 phản hồi 4h)."
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Bắt buộc cung cấp đầy đủ CO/CQ chính hãng",
+            "proposed_solution": "MAND-COCQ",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: 3. Điều kiện thương mại & tiến độ:\n- Thời hạn triển khai: 6 tuần (hoàn tất trước 24/12/2026).\n- Ngân sách mục tiêu: 1.65 tỷ VND (chưa VAT). Do mua số lượng lớn,)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Switch bắt buộc cấp nguồn PoE+",
+            "proposed_solution": "MAND-POE",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: 1. Hạng mục thiết bị cho 12 chi nhánh:\n- 12 Thiết bị SD-WAN chi nhánh hỗ trợ Dual WAN và 4G failover.\n- 24 Access Point Wi-Fi 6 doanh nghiệp (2 AP/chi nhánh) kè)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Bảo trì 24x7 với SLA ứng cứu trong 4 giờ",
+            "proposed_solution": "MAND-SLA-24X7",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: 2. Dịch vụ & Bảo trì:\n- Dịch vụ triển khai chuẩn hóa cho 12 chi nhánh và thiết kế SD-WAN kết nối về trụ sở chính.\n- Gói bảo trì 24x7 SLA 4 giờ.)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Điều khoản phạt chậm tiến độ hợp đồng",
+            "proposed_solution": "MAND-PENALTY",
+            "status": "CONDITIONAL",
+            "status_label": "ĐÁP ỨNG CÓ ĐIỀU KIỆN (Cần rà soát pháp lý)",
+            "evidence": "Điều khoản phạt chậm tiến độ cần Trưởng phòng KD & Ban Giám đốc phê duyệt."
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Thiết bị công nghiệp chuẩn IP67 (-20°C) cho kho lạnh",
+            "proposed_solution": "MAND-IP67",
+            "status": "OUT_OF_CATALOG",
+            "status_label": "NGOÀI DANH MỤC (Cần NCC chuyên dụng)",
+            "evidence": "Đề xuất sourcing từ NCC Moxa/Hirschmann, cần Kỹ thuật & Ban Giám đốc phê duyệt."
+          },
+          {
+            "type": "Tiến độ & Vận hành",
+            "requirement": "Hoàn thành trong 42 ngày",
+            "proposed_solution": "Triển khai trong Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đủ năng lực & lịch triển khai phù hợp trong các tuần: Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026."
+          }
+        ],
+        "data_boundary_checks": [
+          {
+            "department": "Kinh doanh (Commercial Boundary)",
+            "status": "REVIEW_REQUIRED",
+            "checks": [
+              "Đơn giá khớp 100% bảng giá chuẩn Thiên Minh (7 dòng).",
+              "Chiết khấu đề xuất: 14.0% (Chuẩn bậc: 4.33%).",
+              "Biên lợi nhuận gộp: 15.83%.",
+              "Tổng giá trước VAT nằm trong ngân sách khách hàng."
+            ]
+          },
+          {
+            "department": "Kỹ thuật (Technical Boundary)",
+            "status": "REVIEW_REQUIRED",
+            "checks": [
+              "Đã kiểm tra chéo 5 điều kiện bắt buộc của RFP.",
+              "Đã tự động loại 3 gói giá thấp không đủ chức năng bắt buộc.",
+              "Cảnh báo: Có 1 hạng mục ngoài danh mục cần Kỹ thuật xác minh NCC."
+            ]
+          },
+          {
+            "department": "Vận hành (Operations Boundary)",
+            "status": "PASS",
+            "checks": [
+              "Lead-time nhập hàng tối đa: 21 ngày; Nhu cầu nhân lực: 33 man-days.",
+              "Năng lực tuần hiện có trong khung thời hạn: 164 man-days.",
+              "Lịch triển khai khả thi trong quỹ năng lực đội ngũ."
+            ]
+          }
+        ],
+        "proposal_summary": {
+          "proposal_code": "PROP-RFP-2026-1104",
+          "customer_name": "CHUỖI SIÊU THỊ SUNMART",
+          "location": "MIỀN NAM | 12 CHI NHÁNH MIỀN NAM)",
+          "scale": "12 CHI NHÁNH",
+          "executive_overview": "Thiên Minh đề xuất giải pháp hạ tầng mạng và bảo mật đồng bộ cho CHUỖI SIÊU THỊ SUNMART, đảm bảo đáp ứng đầy đủ 5 điều kiện kỹ thuật & pháp lý bắt buộc, loại bỏ rủi ro thiếu hụt tính năng và kiểm soát chặt tiến độ bàn giao.",
+          "implementation_plan": [
+            {
+              "phase": "Giai đoạn 1 (Tuần 1)",
+              "activity": "Khảo sát hiện trạng chi tiết, chốt kiến trúc LLD & đặt hàng thiết bị chính hãng (CO/CQ)."
+            },
+            {
+              "phase": "Giai đoạn 2 (Tuần 2-3)",
+              "activity": "Pre-staging cấu hình thiết bị tại Lab Thiên Minh, kiểm thử HA/VLAN/PoE trước khi mang ra site."
+            },
+            {
+              "phase": "Giai đoạn 3 (Tuần 4+)",
+              "activity": "Lắp đặt tận nơi, đấu nối hệ thống, test nghiệm thu UAT và chuyển giao tài liệu As-Built (Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026)."
+            }
+          ],
+          "risk_highlights": [
+            "Đã chặn 3 cấu hình giá thấp không đủ tính năng (PoE/Layer 3/IPS/HA/SLA).",
+            "Có thiết bị ngoài danh mục cần xác nhận báo giá NCC phụ."
+          ],
+          "revision_history": [
+
+          ]
+        },
+        "draft_quotation": {
+          "quote_number": "QT-RFP-2026-1104",
+          "issue_date": "2026-11-12",
+          "validity_days": 30,
+          "seller": {
+            "name": "Công ty Cổ phần Công nghệ & Hạ tầng Thiên Minh",
+            "short_name": "Thiên Minh Company",
+            "tax_code": "0315889922",
+            "address": "Tầng 8, Tòa nhà TechHub, Quận 1, TP. Hồ Chí Minh",
+            "hotline": "1900 6889",
+            "email": "sales@thienminhtech.vn"
+          },
+          "buyer": {
+            "name": "CHUỖI SIÊU THỊ SUNMART",
+            "location": "MIỀN NAM | 12 CHI NHÁNH MIỀN NAM)"
+          },
+          "items": [
+            {
+              "item_id": "ITEM-1",
+              "sku": "EXT-NONCATALOG-IP67",
+              "name": "Switch công nghiệp chống bụi nước chuẩn IP67 (Cần báo giá NCC ngoài)",
+              "category": "Out-of-Catalog",
+              "is_service": false,
+              "status": "OUT_OF_CATALOG",
+              "unit": "Thiết bị",
+              "quantity": 3,
+              "unit_price_vnd": 32000000,
+              "line_list_total_vnd": 96000000,
+              "line_cost_total_vnd": 73500000
+            },
+            {
+              "item_id": "ITEM-2",
+              "sku": "TM-SW-ACC-POE-24",
+              "name": "Switch Access 24-Port Gigabit PoE+ 370W L2+",
+              "category": "Access Switch",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 12,
+              "unit_price_vnd": 24500000,
+              "line_list_total_vnd": 294000000,
+              "line_cost_total_vnd": 222000000
+            },
+            {
+              "item_id": "ITEM-3",
+              "sku": "TM-AP-WIFI6-PRO",
+              "name": "Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+              "category": "Wireless",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 24,
+              "unit_price_vnd": 14500000,
+              "line_list_total_vnd": 348000000,
+              "line_cost_total_vnd": 259200000
+            },
+            {
+              "item_id": "ITEM-4",
+              "sku": "TM-SDWAN-BR",
+              "name": "Thiết bị SD-WAN Chi nhánh (Dual WAN + 4G/LTE Failover)",
+              "category": "SD-WAN / Router",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 12,
+              "unit_price_vnd": 18500000,
+              "line_list_total_vnd": 222000000,
+              "line_cost_total_vnd": 168000000
+            },
+            {
+              "item_id": "ITEM-5",
+              "sku": "TM-SRV-DEPLOY-BRANCH",
+              "name": "Dịch vụ triển khai chuẩn hóa theo Chi nhánh (Rollout/Site)",
+              "category": "Deployment Service",
+              "is_service": true,
+              "status": "MATCHED",
+              "unit": "Chi nhánh",
+              "quantity": 12,
+              "unit_price_vnd": 8500000,
+              "line_list_total_vnd": 102000000,
+              "line_cost_total_vnd": 60000000
+            },
+            {
+              "item_id": "ITEM-6",
+              "sku": "TM-SRV-DEPLOY-SEC",
+              "name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+              "category": "Deployment Service",
+              "is_service": true,
+              "status": "MATCHED",
+              "unit": "Gói",
+              "quantity": 1,
+              "unit_price_vnd": 35000000,
+              "line_list_total_vnd": 35000000,
+              "line_cost_total_vnd": 19500000
+            },
+            {
+              "item_id": "ITEM-7",
+              "sku": "TM-MNT-24X7-4H",
+              "name": "Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+              "category": "Maintenance & SLA",
+              "is_service": true,
+              "status": "MATCHED",
+              "unit": "Gói/Năm",
+              "quantity": 1,
+              "unit_price_vnd": 54000000,
+              "line_list_total_vnd": 54000000,
+              "line_cost_total_vnd": 31000000
+            }
+          ],
+          "summary": {
+            "list_subtotal_vnd": 1151000000,
+            "discount_pct": 14.0,
+            "discount_amount_vnd": 161140000,
+            "net_before_vat_vnd": 989860000,
+            "vat_rate_pct": 10.0,
+            "vat_amount_vnd": 98986000,
+            "grand_total_vnd": 1088846000
+          },
+          "commercial_terms": [
+            "Thời gian giao hàng & triển khai: 42 ngày.",
+            "Chứng từ kèm theo: Đầy đủ CO/CQ chính hãng từ Nhà sản xuất cho toàn bộ thiết bị.",
+            "Thanh toán: Đợt 1 tạm ứng 40% khi ký HĐ; Đợt 2 thanh toán 40% khi giao hàng; Đợt 3 thanh toán 20% sau nghiệm thu bàn giao.",
+            "Hiệu lực báo giá: 30 ngày kể từ ngày phát hành."
+          ]
+        }
+      },
+      "workflow_trace": [
+        {
+          "step": "RECEIVE",
+          "label": "1. Tiếp nhận yêu cầu chào giá (RFP/RFQ)",
+          "actor": "Hệ thống / Kinh doanh",
+          "status": "DONE",
+          "timestamp": "2026-11-13T08:03:02+07:00",
+          "summary": "Đã tiếp nhận hồ sơ từ Hồ sơ mời chào giá (RFQ) (Phụ trách: Nguyễn Minh Tuấn)."
+        },
+        {
+          "step": "EXTRACT",
+          "label": "2. [AI AGENT] Trích xuất & Phân rã yêu cầu",
+          "actor": "AI Agent (Offline Engine)",
+          "status": "DONE",
+          "timestamp": "2026-11-13T08:03:02+07:00",
+          "summary": "Bóc tách được 7 hạng mục, 5 điều kiện bắt buộc. Phân tích bằng Offline NLP & Rule Engine (Hybrid sẵn sàng)."
+        },
+        {
+          "step": "COMPLETENESS_GATE",
+          "label": "3. Cổng kiểm tra: Có đủ thông tin?",
+          "actor": "AI Agent Gatekeeper",
+          "status": "DONE",
+          "decision": "CÓ",
+          "timestamp": "2026-11-13T08:03:02+07:00",
+          "summary": "Đạt 100/100 điểm đầy đủ thông tin. Tiếp tục đối chiếu kỹ thuật & vận hành."
+        },
+        {
+          "step": "MATCH_FEASIBILITY",
+          "label": "4. [AI AGENT] Đối chiếu giải pháp, năng lực & lịch triển khai",
+          "actor": "AI Agent + Dữ liệu KT & Vận hành",
+          "status": "WARNING",
+          "timestamp": "2026-11-13T08:03:02+07:00",
+          "summary": "Khớp 7 hạng mục; chặn 3 gói giá thấp sai chức năng; ngoài danh mục: CÓ; lịch triển khai: Khả thi."
+        },
+        {
+          "step": "PRICING",
+          "label": "5. [AI AGENT] Tính toán giá đề xuất & áp dụng chính sách chiết khấu",
+          "actor": "AI Agent Pricing Engine",
+          "status": "DONE",
+          "timestamp": "2026-11-13T08:03:02+07:00",
+          "summary": "Tổng trước VAT: 989.860.000 VND (Chiết khấu 14.0%, Biên LN 15.83%)."
+        },
+        {
+          "step": "AUTHORITY_GATE",
+          "label": "6. Kiểm tra vượt thẩm quyền / Chiết khấu đặc biệt / Ngoài danh mục?",
+          "actor": "AI Agent Policy Gate",
+          "status": "ESCALATED",
+          "decision": "CÓ",
+          "timestamp": "2026-11-13T08:03:02+07:00",
+          "summary": "Kích hoạt chuyển duyệt (Ban Giám đốc): ESC-DISC-EXEC, ESC-MARGIN-MGR, ESC-OUT-OF-CAT, ESC-PENALTY-TERM."
+        },
+        {
+          "step": "ASSEMBLE_PROPOSAL",
+          "label": "7. Hợp nhất tài liệu: Hồ sơ đề xuất, Ma trận đáp ứng & Dự thảo chào giá",
+          "actor": "AI Agent Document Builder",
+          "status": "DONE",
+          "timestamp": "2026-11-13T08:03:02+07:00",
+          "summary": "Đã tạo Ma trận đáp ứng (13 dòng), Kiểm tra ranh giới 3 phòng ban & Dự thảo báo giá QT-RFP-2026-1104."
+        }
+      ],
+      "hitl": {
+        "escalation_approved": true,
+        "escalation_approver": "Trần Minh Quân (Ban Giám đốc)",
+        "escalation_comment": "Đồng ý phương án đề xuất.",
+        "dept_signoffs": {
+          "sales": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          },
+          "technical": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          },
+          "operations": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          }
+        },
+        "escalation_at": "2026-11-13T08:03:02+07:00"
+      }
+    },
+    {
+      "id": "RFP-2026-1105",
+      "title": "Mở rộng hạ tầng mạng Nhà máy thông minh - Công ty Sản xuất Hòa Bình",
+      "raw_text": "Đoạn 1 (Giới thiệu): Công ty Sản xuất Hòa Bình cần nâng cấp mạng cho khối văn phòng và dây chuyền lắp ráp mới tại KCN VSIP Bình Dương.\n\nĐoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới, cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU làm trung tâm.\n\nĐoạn 3 (Không dây & Bảo mật): Trang bị 10 Access Point Wi-Fi 6 chịu tải cao (tối thiểu 200 user/AP) và 01 Firewall doanh nghiệp IPS >= 5 Gbps.\n\nĐoạn 4 (Triển khai & SLA): Yêu cầu dịch vụ khảo sát, lắp đặt, tách VLAN sản xuất - văn phòng, cấu hình bảo mật, cộng gói bảo trì 24x7 SLA ứng cứu 4h trong 12 tháng.\n\nĐoạn 5 (Tiến độ, Ngân sách & Pháp lý): Tiến độ yêu cầu trong 5 tuần (trước 20/12/2026). Ngân sách phê duyệt 750 triệu VND (chưa VAT). Điều kiện bắt buộc: Chứng chỉ CO/CQ, kỹ sư triển khai có chứng chỉ CCNP/NSE4, bảo hành tối thiểu 12 tháng.",
+      "channel": "Bộ tài liệu kỹ thuật 5 đoạn",
+      "sales_owner": "Phạm Quốc Bảo",
+      "received_date": "2026-11-12",
+      "expected_scenario": "Hồ sơ đa đoạn phức tạp - Cần gom đủ điều kiện bắt buộc, kiểm tra ngân sách (có thể cần chiết khấu cấp Trưởng phòng để khớp 750tr) và rà soát ranh giới dữ liệu 3 phòng ban",
+      "status": "READY_FOR_HITL_REVIEW",
+      "triage_category": "SẴN SÀNG CHUẨN BỊ CHÀO GIÁ",
+      "current_node": "HITL_FINAL_REVIEW",
+      "clarifications": [
+
+      ],
+      "revision_notes": [
+
+      ],
+      "audit_log": [
+        {
+          "at": "2026-11-12T13:15:54+07:00",
+          "type": "CREATED",
+          "message": "Tiếp nhận yêu cầu chào giá RFP-2026-1105 qua Bộ tài liệu kỹ thuật 5 đoạn."
+        },
+        {
+          "at": "2026-11-12T13:15:54+07:00",
+          "type": "AI_RUN",
+          "message": "AI Agent hoàn tất phân tích. Trạng thái: SẴN SÀNG CHUẨN BỊ CHÀO GIÁ."
+        }
+      ],
+      "created_at": "2026-11-12T13:15:54+07:00",
+      "updated_at": "2026-11-12T13:15:54+07:00",
+      "extracted": {
+        "customer_name": "Công ty Sản xuất Hòa Bình",
+        "location": "KCN VSIP Bình Dương",
+        "scale_summary": "200 user",
+        "deadline": {
+          "raw_text": "5 tuần - trước 20/12/2026",
+          "duration_days": 35,
+          "target_date": "2026-12-20"
+        },
+        "budget": {
+          "amount_vnd": 750000000,
+          "vat_excluded": true,
+          "raw_text": "750 triệu VND"
+        },
+        "requested_discount_pct": null,
+        "items": [
+          {
+            "name": "Core Switch 10G SFP+ Layer 3",
+            "category": "Core Switch",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "mandatory_specs": {
+              "ports": 24,
+              "uplink_10g": true,
+              "layer3": true,
+              "redundant_psu": true,
+              "stacking": false
+            },
+            "spec_notes": "cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU làm trung tâm.",
+            "source_excerpt": "cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU làm trung tâm.",
+            "item_id": "ITEM-1"
+          },
+          {
+            "name": "Switch Access 48-Port PoE+ Layer 3",
+            "category": "Access Switch",
+            "quantity": 2,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "ports": 48,
+              "poe": true,
+              "uplink_10g": false,
+              "layer3": true,
+              "stacking": true
+            },
+            "spec_notes": "Đoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới",
+            "source_excerpt": "Đoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới",
+            "item_id": "ITEM-2"
+          },
+          {
+            "name": "Firewall NGFW (IPS >= 5.0 Gbps)",
+            "category": "Firewall",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "ips_gbps": 5.0,
+              "ha": false,
+              "uplink_10g": false
+            },
+            "spec_notes": "Đoạn 3 (Không dây & Bảo mật): Trang bị 10 Access Point Wi-Fi 6 chịu tải cao (tối thiểu 200 user/AP) và 01 Firewall doanh nghiệp IPS >= 5 Gbps.",
+            "source_excerpt": "Đoạn 3 (Không dây & Bảo mật): Trang bị 10 Access Point Wi-Fi 6 chịu tải cao (tối thiểu 200 user/AP) và 01 Firewall doanh nghiệp IPS >= 5 Gbps.",
+            "item_id": "ITEM-3"
+          },
+          {
+            "name": "Access Point Wi-Fi 6 Enterprise",
+            "category": "Wireless",
+            "quantity": 10,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "high_density_wifi": true,
+              "seamless_roaming": false,
+              "poe": true
+            },
+            "spec_notes": "Đoạn 3 (Không dây & Bảo mật): Trang bị 10 Access Point Wi-Fi 6 chịu tải cao (tối thiểu 200 user/AP) và 01 Firewall doanh nghiệp IPS >= 5 Gbps.",
+            "source_excerpt": "Đoạn 3 (Không dây & Bảo mật): Trang bị 10 Access Point Wi-Fi 6 chịu tải cao (tối thiểu 200 user/AP) và 01 Firewall doanh nghiệp IPS >= 5 Gbps.",
+            "item_id": "ITEM-4"
+          },
+          {
+            "name": "Dịch vụ khảo sát, lắp đặt & cấu hình LAN/Wi-Fi/VLAN",
+            "category": "Deployment Service",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "mandatory_specs": {
+              "vlan_segmentation": true
+            },
+            "spec_notes": "Khảo sát, lắp đặt rack, cấu hình VLAN, bàn giao As-Built",
+            "source_excerpt": "Đoạn 4 (Triển khai & SLA): Yêu cầu dịch vụ khảo sát, lắp đặt, tách VLAN sản xuất - văn phòng, cấu hình bảo mật, cộng gói bảo trì 24x7 SLA ứng cứu 4h trong 12 th",
+            "item_id": "ITEM-5"
+          },
+          {
+            "name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "category": "Deployment Service",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "mandatory_specs": {
+              "ha_failover_test": true
+            },
+            "spec_notes": "Thiết kế kiến trúc bảo mật, cấu hình HA/IPS/VPN & nghiệm thu",
+            "source_excerpt": "Đoạn 3 (Không dây & Bảo mật): Trang bị 10 Access Point Wi-Fi 6 chịu tải cao (tối thiểu 200 user/AP) và 01 Firewall doanh nghiệp IPS >= 5 Gbps.",
+            "item_id": "ITEM-6"
+          },
+          {
+            "name": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng)",
+            "category": "Maintenance & SLA",
+            "quantity": 1,
+            "quantity_ambiguous": false,
+            "spec_ambiguous": false,
+            "mandatory_specs": {
+              "sla_24x7": true,
+              "response_hours": 4,
+              "duration_months": 12
+            },
+            "spec_notes": "Đoạn 4 (Triển khai & SLA): Yêu cầu dịch vụ khảo sát, lắp đặt, tách VLAN sản xuất - văn phòng, cấu hình bảo mật, cộng gói bảo trì 24x7 SLA ứng cứu 4h trong 12 th",
+            "source_excerpt": "Đoạn 4 (Triển khai & SLA): Yêu cầu dịch vụ khảo sát, lắp đặt, tách VLAN sản xuất - văn phòng, cấu hình bảo mật, cộng gói bảo trì 24x7 SLA ứng cứu 4h trong 12 th",
+            "item_id": "ITEM-7"
+          }
+        ],
+        "mandatory_conditions": [
+          {
+            "code": "MAND-COCQ",
+            "label": "Bắt buộc cung cấp đầy đủ CO/CQ chính hãng",
+            "source_excerpt": "Đoạn 5 (Tiến độ, Ngân sách & Pháp lý): Tiến độ yêu cầu trong 5 tuần (trước 20/12/2026). Ngân sách phê duyệt 750 triệu VND (chưa VAT). Điều kiện bắt buộc: Chứng "
+          },
+          {
+            "code": "MAND-POE",
+            "label": "Switch bắt buộc cấp nguồn PoE+",
+            "source_excerpt": "Đoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới, cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU là"
+          },
+          {
+            "code": "MAND-10G",
+            "label": "Bắt buộc có cổng uplink 10G SFP+",
+            "source_excerpt": "Đoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới, cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU là"
+          },
+          {
+            "code": "MAND-L3",
+            "label": "Switch hỗ trợ định tuyến Layer 3 đầy đủ",
+            "source_excerpt": "Đoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới, cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU là"
+          },
+          {
+            "code": "MAND-RPSU",
+            "label": "Core Switch có nguồn dự phòng kép (Redundant PSU)",
+            "source_excerpt": "Đoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới, cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU là"
+          },
+          {
+            "code": "MAND-IPS",
+            "label": "Firewall bắt buộc thông lượng IPS >= 5 Gbps",
+            "source_excerpt": "Đoạn 3 (Không dây & Bảo mật): Trang bị 10 Access Point Wi-Fi 6 chịu tải cao (tối thiểu 200 user/AP) và 01 Firewall doanh nghiệp IPS >= 5 Gbps."
+          },
+          {
+            "code": "MAND-SLA-24X7",
+            "label": "Bảo trì 24x7 với SLA ứng cứu trong 4 giờ",
+            "source_excerpt": "Đoạn 4 (Triển khai & SLA): Yêu cầu dịch vụ khảo sát, lắp đặt, tách VLAN sản xuất - văn phòng, cấu hình bảo mật, cộng gói bảo trì 24x7 SLA ứng cứu 4h trong 12 th"
+          },
+          {
+            "code": "MAND-CERT",
+            "label": "Kỹ sư triển khai có chứng chỉ chuyên môn (CCNP/NSE4)",
+            "source_excerpt": "Đoạn 5 (Tiến độ, Ngân sách & Pháp lý): Tiến độ yêu cầu trong 5 tuần (trước 20/12/2026). Ngân sách phê duyệt 750 triệu VND (chưa VAT). Điều kiện bắt buộc: Chứng "
+          }
+        ],
+        "segments": [
+          {
+            "index": 1,
+            "text": "Đoạn 1 (Giới thiệu): Công ty Sản xuất Hòa Bình cần nâng cấp mạng cho khối văn phòng và dây chuyền lắp ráp mới tại KCN VSIP Bình Dương."
+          },
+          {
+            "index": 2,
+            "text": "Đoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới, cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU làm trung tâm."
+          },
+          {
+            "index": 3,
+            "text": "Đoạn 3 (Không dây & Bảo mật): Trang bị 10 Access Point Wi-Fi 6 chịu tải cao (tối thiểu 200 user/AP) và 01 Firewall doanh nghiệp IPS >= 5 Gbps."
+          },
+          {
+            "index": 4,
+            "text": "Đoạn 4 (Triển khai & SLA): Yêu cầu dịch vụ khảo sát, lắp đặt, tách VLAN sản xuất - văn phòng, cấu hình bảo mật, cộng gói bảo trì 24x7 SLA ứng cứu 4h trong 12 tháng."
+          },
+          {
+            "index": 5,
+            "text": "Đoạn 5 (Tiến độ, Ngân sách & Pháp lý): Tiến độ yêu cầu trong 5 tuần (trước 20/12/2026). Ngân sách phê duyệt 750 triệu VND (chưa VAT). Điều kiện bắt buộc: Chứng chỉ CO/CQ, kỹ sư triển khai có chứng chỉ CCNP/NSE4, bảo hành tối thiểu 12 tháng."
+          }
+        ],
+        "ambiguous_points": [
+
+        ]
+      },
+      "completeness_gate": {
+        "is_complete": true,
+        "decision": "CÓ ĐỦ THÔNG TIN",
+        "completeness_score": 100,
+        "blocking_count": 0,
+        "warning_count": 0,
+        "missing_fields": [
+
+        ],
+        "clarification_email_draft": null
+      },
+      "feasibility": {
+        "matched_items": [
+          {
+            "item_id": "ITEM-1",
+            "requested_name": "Core Switch 10G SFP+ Layer 3",
+            "category": "Core Switch",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-SW-CORE-L3-24SFP",
+            "selected_name": "Core Switch 24-Port 10G SFP+ Full Layer 3 Redundant PSU",
+            "vendor": "Cisco Catalyst 9300X / Aruba 8325",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 145000000,
+            "cost_vnd": 112000000,
+            "lead_time_days": 14,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (24 ports >= 24 ports, Có uplink 10G SFP+, Định tuyến Layer 3 đầy đủ, Có nguồn dự phòng kép).",
+            "passed_checks": [
+              "24 ports >= 24 ports",
+              "Có uplink 10G SFP+",
+              "Định tuyến Layer 3 đầy đủ",
+              "Có nguồn dự phòng kép"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-2",
+            "requested_name": "Switch Access 48-Port PoE+ Layer 3",
+            "category": "Access Switch",
+            "quantity": 2,
+            "status": "MATCHED",
+            "selected_sku": "TM-SW-ACC-POE-48-L3",
+            "selected_name": "Switch Access/Dist 48-Port Gigabit PoE+ 740W Layer 3 Stackable",
+            "vendor": "Cisco Catalyst 9200L / Aruba 6200F",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 68000000,
+            "cost_vnd": 52000000,
+            "lead_time_days": 10,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (48 ports >= 48 ports, Hỗ trợ PoE+ 740W, Định tuyến Layer 3 đầy đủ, Hỗ trợ Stacking).",
+            "passed_checks": [
+              "48 ports >= 48 ports",
+              "Hỗ trợ PoE+ 740W",
+              "Định tuyến Layer 3 đầy đủ",
+              "Hỗ trợ Stacking"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-3",
+            "requested_name": "Firewall NGFW (IPS >= 5.0 Gbps)",
+            "category": "Firewall",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-FW-ENT-5G",
+            "selected_name": "Firewall NGFW Enterprise (IPS 5.5 Gbps, Hỗ trợ HA)",
+            "vendor": "Fortinet FortiGate 200F / Palo Alto PA-1410",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 118000000,
+            "cost_vnd": 91000000,
+            "lead_time_days": 10,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (IPS 5.5 Gbps >= 5.0 Gbps).",
+            "passed_checks": [
+              "IPS 5.5 Gbps >= 5.0 Gbps"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-4",
+            "requested_name": "Access Point Wi-Fi 6 Enterprise",
+            "category": "Wireless",
+            "quantity": 10,
+            "status": "MATCHED",
+            "selected_sku": "TM-AP-WIFI6-PRO",
+            "selected_name": "Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+            "vendor": "Aruba AP-515 / Cisco Catalyst 9120",
+            "unit": "Thiết bị",
+            "unit_price_vnd": 14500000,
+            "cost_vnd": 10800000,
+            "lead_time_days": 7,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Chịu tải 250 clients/AP).",
+            "passed_checks": [
+              "Chịu tải 250 clients/AP"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-5",
+            "requested_name": "Dịch vụ khảo sát, lắp đặt & cấu hình LAN/Wi-Fi/VLAN",
+            "category": "Deployment Service",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-SRV-DEPLOY-LAN",
+            "selected_name": "Dịch vụ khảo sát, lắp đặt, cấu hình mạng LAN/Switch/Wi-Fi (Theo Site/Tầng)",
+            "vendor": "Thiên Minh Services",
+            "unit": "Gói",
+            "unit_price_vnd": 28000000,
+            "cost_vnd": 16000000,
+            "lead_time_days": 5,
+            "man_days": 6,
+            "required_roles": [
+              "Network Engineer",
+              "Field Technician"
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai).",
+            "passed_checks": [
+              "Đúng phạm vi dịch vụ triển khai"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-6",
+            "requested_name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "category": "Deployment Service",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-SRV-DEPLOY-SEC",
+            "selected_name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "vendor": "Thiên Minh Services",
+            "unit": "Gói",
+            "unit_price_vnd": 35000000,
+            "cost_vnd": 19500000,
+            "lead_time_days": 5,
+            "man_days": 7,
+            "required_roles": [
+              "Security Engineer",
+              "Network Architect"
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai).",
+            "passed_checks": [
+              "Đúng phạm vi dịch vụ triển khai"
+            ],
+            "failed_checks": [
+
+            ]
+          },
+          {
+            "item_id": "ITEM-7",
+            "requested_name": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng)",
+            "category": "Maintenance & SLA",
+            "quantity": 1,
+            "status": "MATCHED",
+            "selected_sku": "TM-MNT-24X7-4H",
+            "selected_name": "Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+            "vendor": "Thiên Minh Support",
+            "unit": "Gói/Năm",
+            "unit_price_vnd": 54000000,
+            "cost_vnd": 31000000,
+            "lead_time_days": 1,
+            "man_days": 0,
+            "required_roles": [
+
+            ],
+            "compliance_notes": "Đạt 100% đặc tính bắt buộc (SLA 24x7 phản hồi 4h).",
+            "passed_checks": [
+              "SLA 24x7 phản hồi 4h"
+            ],
+            "failed_checks": [
+
+            ]
+          }
+        ],
+        "rejected_low_price_traps": [
+          {
+            "item_id": "ITEM-2",
+            "requested_item": "Switch Access 48-Port PoE+ Layer 3",
+            "rejected_sku": "TM-SW-ACC-L2-24",
+            "rejected_name": "Switch Access 24-Port Gigabit L2 (Entry)",
+            "rejected_unit_price_vnd": 9500000,
+            "failed_reasons": [
+              "Chỉ có 24 ports (yêu cầu 48 ports)",
+              "Không hỗ trợ cấp nguồn PoE+",
+              "Chỉ hỗ trợ Layer 2, thiếu Layer 3 bắt buộc",
+              "Không hỗ trợ Stacking"
+            ]
+          },
+          {
+            "item_id": "ITEM-2",
+            "requested_item": "Switch Access 48-Port PoE+ Layer 3",
+            "rejected_sku": "TM-SW-ACC-POE-24",
+            "rejected_name": "Switch Access 24-Port Gigabit PoE+ 370W L2+",
+            "rejected_unit_price_vnd": 24500000,
+            "failed_reasons": [
+              "Chỉ có 24 ports (yêu cầu 48 ports)",
+              "Chỉ hỗ trợ Layer 2, thiếu Layer 3 bắt buộc",
+              "Không hỗ trợ Stacking"
+            ]
+          },
+          {
+            "item_id": "ITEM-3",
+            "requested_item": "Firewall NGFW (IPS >= 5.0 Gbps)",
+            "rejected_sku": "TM-FW-ENTRY-1G",
+            "rejected_name": "Firewall NGFW Entry (IPS 1.2 Gbps, Single Unit)",
+            "rejected_unit_price_vnd": 26000000,
+            "failed_reasons": [
+              "IPS chỉ đạt 1.4 Gbps (yêu cầu >= 5.0 Gbps)"
+            ]
+          },
+          {
+            "item_id": "ITEM-4",
+            "requested_item": "Access Point Wi-Fi 6 Enterprise",
+            "rejected_sku": "TM-AP-WIFI6-STD",
+            "rejected_name": "Access Point Wi-Fi 6 Standard 2x2 (Văn phòng nhẹ)",
+            "rejected_unit_price_vnd": 5800000,
+            "failed_reasons": [
+              "Chỉ chịu tải 80 clients/AP (không đạt chuẩn chịu tải cao >= 200)"
+            ]
+          },
+          {
+            "item_id": "ITEM-7",
+            "requested_item": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng)",
+            "rejected_sku": "TM-MNT-8X5",
+            "rejected_name": "Gói bảo trì & hỗ trợ kỹ thuật tiêu chuẩn 8x5 (SLA phản hồi 8h) / 12 tháng",
+            "rejected_unit_price_vnd": 24000000,
+            "failed_reasons": [
+              "Chỉ hỗ trợ giờ hành chính 8x5 (8h), KHÔNG đạt yêu cầu 24x7 SLA 4h"
+            ]
+          }
+        ],
+        "has_out_of_catalog": false,
+        "out_of_catalog_items": [
+
+        ],
+        "schedule_check": {
+          "feasible": true,
+          "requested_days": 35,
+          "required_min_days": 24,
+          "earliest_feasible_days": 28,
+          "max_hardware_lead_days": 14,
+          "estimated_man_days": 13,
+          "available_man_days_in_window": 119,
+          "window_weeks": [
+            {
+              "week_id": "2026-W46",
+              "label": "Tuần 12/11 - 18/11/2026 (Hiện tại)",
+              "start_date": "2026-11-12",
+              "end_date": "2026-11-18",
+              "allocated_projects": 6,
+              "utilization_pct": 95,
+              "available_man_days": 3,
+              "active_commitments": [
+                "Ngân hàng Á Đông (Cutover)",
+                "KCN Tân Bình (Core Switch)",
+                "Cảng Cát Lái (Wi-Fi)"
+              ],
+              "status": "OVERLOADED"
+            },
+            {
+              "week_id": "2026-W47",
+              "label": "Tuần 19/11 - 25/11/2026",
+              "start_date": "2026-11-19",
+              "end_date": "2026-11-25",
+              "allocated_projects": 5,
+              "utilization_pct": 86,
+              "available_man_days": 10,
+              "active_commitments": [
+                "Ngân hàng Á Đông (UAT)",
+                "Chuỗi GymFit (SD-WAN)"
+              ],
+              "status": "TIGHT"
+            },
+            {
+              "week_id": "2026-W48",
+              "label": "Tuần 26/11 - 02/12/2026",
+              "start_date": "2026-11-26",
+              "end_date": "2026-12-02",
+              "allocated_projects": 3,
+              "utilization_pct": 58,
+              "available_man_days": 28,
+              "active_commitments": [
+                "Bảo trì định kỳ Q4"
+              ],
+              "status": "AVAILABLE"
+            },
+            {
+              "week_id": "2026-W49",
+              "label": "Tuần 03/12 - 09/12/2026",
+              "start_date": "2026-12-03",
+              "end_date": "2026-12-09",
+              "allocated_projects": 2,
+              "utilization_pct": 42,
+              "available_man_days": 38,
+              "active_commitments": [
+                "Tòa nhà Landmark Hub (Phase 1)"
+              ],
+              "status": "AVAILABLE"
+            },
+            {
+              "week_id": "2026-W50",
+              "label": "Tuần 10/12 - 16/12/2026",
+              "start_date": "2026-12-10",
+              "end_date": "2026-12-16",
+              "allocated_projects": 2,
+              "utilization_pct": 40,
+              "available_man_days": 40,
+              "active_commitments": [
+                "Hỗ trợ vận hành thường xuyên"
+              ],
+              "status": "AVAILABLE"
+            }
+          ],
+          "recommended_weeks": [
+            "Tuần 26/11 - 02/12/2026",
+            "Tuần 03/12 - 09/12/2026"
+          ],
+          "conflict_reasons": [
+
+          ],
+          "recommendation": "Đủ năng lực & lịch triển khai phù hợp trong các tuần: Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026."
+        },
+        "certification_check": {
+          "required_by_rfp": true,
+          "available_certifications": [
+            "CCIE Enterprise",
+            "Aruba ACDX",
+            "CCNP",
+            "Aruba ACMP",
+            "Fortinet NSE4/NSE5",
+            "PCNSA",
+            "Cabling & Rack Ops",
+            "Safety Cert"
+          ],
+          "satisfied": true,
+          "note": "Đội ngũ Thiên Minh có sẵn kỹ sư CCIE, CCNP, Aruba ACMP, Fortinet NSE4/NSE5 đáp ứng."
+        },
+        "technical_feasible": true,
+        "operational_feasible": true,
+        "overall_feasible": true
+      },
+      "pricing": {
+        "applied_tier": {
+          "tier_id": "TIER-2",
+          "name": "Gói dự án 500 triệu – < 1.5 tỷ",
+          "min_amount_vnd": 500000000,
+          "max_amount_vnd": 1499999999,
+          "standard_hardware_discount_pct": 4.0,
+          "standard_service_discount_pct": 6.0,
+          "description": "Chiết khấu gói tích hợp thiết bị + triển khai."
+        },
+        "line_items": [
+          {
+            "item_id": "ITEM-1",
+            "sku": "TM-SW-CORE-L3-24SFP",
+            "name": "Core Switch 24-Port 10G SFP+ Full Layer 3 Redundant PSU",
+            "category": "Core Switch",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 1,
+            "unit_price_vnd": 145000000,
+            "line_list_total_vnd": 145000000,
+            "line_cost_total_vnd": 112000000
+          },
+          {
+            "item_id": "ITEM-2",
+            "sku": "TM-SW-ACC-POE-48-L3",
+            "name": "Switch Access/Dist 48-Port Gigabit PoE+ 740W Layer 3 Stackable",
+            "category": "Access Switch",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 2,
+            "unit_price_vnd": 68000000,
+            "line_list_total_vnd": 136000000,
+            "line_cost_total_vnd": 104000000
+          },
+          {
+            "item_id": "ITEM-3",
+            "sku": "TM-FW-ENT-5G",
+            "name": "Firewall NGFW Enterprise (IPS 5.5 Gbps, Hỗ trợ HA)",
+            "category": "Firewall",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 1,
+            "unit_price_vnd": 118000000,
+            "line_list_total_vnd": 118000000,
+            "line_cost_total_vnd": 91000000
+          },
+          {
+            "item_id": "ITEM-4",
+            "sku": "TM-AP-WIFI6-PRO",
+            "name": "Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+            "category": "Wireless",
+            "is_service": false,
+            "status": "MATCHED",
+            "unit": "Thiết bị",
+            "quantity": 10,
+            "unit_price_vnd": 14500000,
+            "line_list_total_vnd": 145000000,
+            "line_cost_total_vnd": 108000000
+          },
+          {
+            "item_id": "ITEM-5",
+            "sku": "TM-SRV-DEPLOY-LAN",
+            "name": "Dịch vụ khảo sát, lắp đặt, cấu hình mạng LAN/Switch/Wi-Fi (Theo Site/Tầng)",
+            "category": "Deployment Service",
+            "is_service": true,
+            "status": "MATCHED",
+            "unit": "Gói",
+            "quantity": 1,
+            "unit_price_vnd": 28000000,
+            "line_list_total_vnd": 28000000,
+            "line_cost_total_vnd": 16000000
+          },
+          {
+            "item_id": "ITEM-6",
+            "sku": "TM-SRV-DEPLOY-SEC",
+            "name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "category": "Deployment Service",
+            "is_service": true,
+            "status": "MATCHED",
+            "unit": "Gói",
+            "quantity": 1,
+            "unit_price_vnd": 35000000,
+            "line_list_total_vnd": 35000000,
+            "line_cost_total_vnd": 19500000
+          },
+          {
+            "item_id": "ITEM-7",
+            "sku": "TM-MNT-24X7-4H",
+            "name": "Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+            "category": "Maintenance & SLA",
+            "is_service": true,
+            "status": "MATCHED",
+            "unit": "Gói/Năm",
+            "quantity": 1,
+            "unit_price_vnd": 54000000,
+            "line_list_total_vnd": 54000000,
+            "line_cost_total_vnd": 31000000
+          }
+        ],
+        "list_subtotal_vnd": 661000000,
+        "standard_discount_pct": 4.35,
+        "proposed_discount_pct": 4.35,
+        "discount_amount_vnd": 28753500,
+        "discount_reason": "Áp dụng chiết khấu chuẩn theo Gói dự án 500 triệu – < 1.5 tỷ.",
+        "net_before_vat_vnd": 632246500,
+        "vat_rate_pct": 10.0,
+        "vat_amount_vnd": 63224650,
+        "grand_total_vnd": 695471150,
+        "estimated_cost_vnd": 481500000,
+        "gross_profit_vnd": 150746500,
+        "gross_margin_pct": 23.84,
+        "customer_budget_vnd": 750000000,
+        "within_budget": true,
+        "budget_gap_vnd": -117753500,
+        "authority_gate": {
+          "needs_escalation": false,
+          "decision": "TRONG THẨM QUYỀN",
+          "triggers": [
+
+          ],
+          "required_approvers": [
+
+          ],
+          "highest_authority_level": "Nhân viên Kinh doanh"
+        }
+      },
+      "deliverables": {
+        "compliance_matrix": [
+          {
+            "type": "Hạng mục",
+            "requirement": "Core Switch 10G SFP+ Layer 3 (SL: 1)",
+            "proposed_solution": "TM-SW-CORE-L3-24SFP - Core Switch 24-Port 10G SFP+ Full Layer 3 Redundant PSU",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (24 ports >= 24 ports, Có uplink 10G SFP+, Định tuyến Layer 3 đầy đủ, Có nguồn dự phòng kép)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Switch Access 48-Port PoE+ Layer 3 (SL: 2)",
+            "proposed_solution": "TM-SW-ACC-POE-48-L3 - Switch Access/Dist 48-Port Gigabit PoE+ 740W Layer 3 Stackable",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (48 ports >= 48 ports, Hỗ trợ PoE+ 740W, Định tuyến Layer 3 đầy đủ, Hỗ trợ Stacking)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Firewall NGFW (IPS >= 5.0 Gbps) (SL: 1)",
+            "proposed_solution": "TM-FW-ENT-5G - Firewall NGFW Enterprise (IPS 5.5 Gbps, Hỗ trợ HA)",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (IPS 5.5 Gbps >= 5.0 Gbps)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Access Point Wi-Fi 6 Enterprise (SL: 10)",
+            "proposed_solution": "TM-AP-WIFI6-PRO - Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Chịu tải 250 clients/AP)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Dịch vụ khảo sát, lắp đặt & cấu hình LAN/Wi-Fi/VLAN (SL: 1)",
+            "proposed_solution": "TM-SRV-DEPLOY-LAN - Dịch vụ khảo sát, lắp đặt, cấu hình mạng LAN/Switch/Wi-Fi (Theo Site/Tầng)",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN (SL: 1)",
+            "proposed_solution": "TM-SRV-DEPLOY-SEC - Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (Đúng phạm vi dịch vụ triển khai)."
+          },
+          {
+            "type": "Hạng mục",
+            "requirement": "Gói bảo trì 24x7 SLA 4 giờ (12 tháng) (SL: 1)",
+            "proposed_solution": "TM-MNT-24X7-4H - Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đạt 100% đặc tính bắt buộc (SLA 24x7 phản hồi 4h)."
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Bắt buộc cung cấp đầy đủ CO/CQ chính hãng",
+            "proposed_solution": "MAND-COCQ",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: Đoạn 5 (Tiến độ, Ngân sách & Pháp lý): Tiến độ yêu cầu trong 5 tuần (trước 20/12/2026). Ngân sách phê duyệt 750 triệu VND (chưa VAT). Điều kiện bắt buộc: Chứng )"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Switch bắt buộc cấp nguồn PoE+",
+            "proposed_solution": "MAND-POE",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: Đoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới, cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU là)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Bắt buộc có cổng uplink 10G SFP+",
+            "proposed_solution": "MAND-10G",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: Đoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới, cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU là)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Switch hỗ trợ định tuyến Layer 3 đầy đủ",
+            "proposed_solution": "MAND-L3",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: Đoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới, cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU là)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Core Switch có nguồn dự phòng kép (Redundant PSU)",
+            "proposed_solution": "MAND-RPSU",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: Đoạn 2 (Yêu cầu chuyển mạch): Cần 02 Switch 48 port PoE+ hỗ trợ Layer 3 và Stacking cho khu văn phòng mới, cùng 01 Core Switch 24 port 10G SFP+ Redundant PSU là)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Firewall bắt buộc thông lượng IPS >= 5 Gbps",
+            "proposed_solution": "MAND-IPS",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: Đoạn 3 (Không dây & Bảo mật): Trang bị 10 Access Point Wi-Fi 6 chịu tải cao (tối thiểu 200 user/AP) và 01 Firewall doanh nghiệp IPS >= 5 Gbps.)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Bảo trì 24x7 với SLA ứng cứu trong 4 giờ",
+            "proposed_solution": "MAND-SLA-24X7",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: Đoạn 4 (Triển khai & SLA): Yêu cầu dịch vụ khảo sát, lắp đặt, tách VLAN sản xuất - văn phòng, cấu hình bảo mật, cộng gói bảo trì 24x7 SLA ứng cứu 4h trong 12 th)"
+          },
+          {
+            "type": "Điều kiện bắt buộc",
+            "requirement": "Kỹ sư triển khai có chứng chỉ chuyên môn (CCNP/NSE4)",
+            "proposed_solution": "MAND-CERT",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đã cấu hình/cam kết theo tiêu chuẩn Thiên Minh (Trích dẫn: Đoạn 5 (Tiến độ, Ngân sách & Pháp lý): Tiến độ yêu cầu trong 5 tuần (trước 20/12/2026). Ngân sách phê duyệt 750 triệu VND (chưa VAT). Điều kiện bắt buộc: Chứng )"
+          },
+          {
+            "type": "Tiến độ & Vận hành",
+            "requirement": "Hoàn thành trong 35 ngày",
+            "proposed_solution": "Triển khai trong Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026",
+            "status": "COMPLIANT",
+            "status_label": "ĐÁP ỨNG ĐẦY ĐỦ",
+            "evidence": "Đủ năng lực & lịch triển khai phù hợp trong các tuần: Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026."
+          }
+        ],
+        "data_boundary_checks": [
+          {
+            "department": "Kinh doanh (Commercial Boundary)",
+            "status": "PASS",
+            "checks": [
+              "Đơn giá khớp 100% bảng giá chuẩn Thiên Minh (7 dòng).",
+              "Chiết khấu đề xuất: 4.35% (Chuẩn bậc: 4.35%).",
+              "Biên lợi nhuận gộp: 23.84%.",
+              "Tổng giá trước VAT nằm trong ngân sách khách hàng."
+            ]
+          },
+          {
+            "department": "Kỹ thuật (Technical Boundary)",
+            "status": "PASS",
+            "checks": [
+              "Đã kiểm tra chéo 8 điều kiện bắt buộc của RFP.",
+              "Đã tự động loại 5 gói giá thấp không đủ chức năng bắt buộc.",
+              "100% thiết bị thuộc danh mục chuẩn sẵn có."
+            ]
+          },
+          {
+            "department": "Vận hành (Operations Boundary)",
+            "status": "PASS",
+            "checks": [
+              "Lead-time nhập hàng tối đa: 14 ngày; Nhu cầu nhân lực: 13 man-days.",
+              "Năng lực tuần hiện có trong khung thời hạn: 119 man-days.",
+              "Lịch triển khai khả thi trong quỹ năng lực đội ngũ."
+            ]
+          }
+        ],
+        "proposal_summary": {
+          "proposal_code": "PROP-RFP-2026-1105",
+          "customer_name": "Công ty Sản xuất Hòa Bình",
+          "location": "KCN VSIP Bình Dương",
+          "scale": "200 user",
+          "executive_overview": "Thiên Minh đề xuất giải pháp hạ tầng mạng và bảo mật đồng bộ cho Công ty Sản xuất Hòa Bình, đảm bảo đáp ứng đầy đủ 8 điều kiện kỹ thuật & pháp lý bắt buộc, loại bỏ rủi ro thiếu hụt tính năng và kiểm soát chặt tiến độ bàn giao.",
+          "implementation_plan": [
+            {
+              "phase": "Giai đoạn 1 (Tuần 1)",
+              "activity": "Khảo sát hiện trạng chi tiết, chốt kiến trúc LLD & đặt hàng thiết bị chính hãng (CO/CQ)."
+            },
+            {
+              "phase": "Giai đoạn 2 (Tuần 2-3)",
+              "activity": "Pre-staging cấu hình thiết bị tại Lab Thiên Minh, kiểm thử HA/VLAN/PoE trước khi mang ra site."
+            },
+            {
+              "phase": "Giai đoạn 3 (Tuần 4+)",
+              "activity": "Lắp đặt tận nơi, đấu nối hệ thống, test nghiệm thu UAT và chuyển giao tài liệu As-Built (Tuần 26/11 - 02/12/2026, Tuần 03/12 - 09/12/2026)."
+            }
+          ],
+          "risk_highlights": [
+            "Đã chặn 5 cấu hình giá thấp không đủ tính năng (PoE/Layer 3/IPS/HA/SLA)."
+          ],
+          "revision_history": [
+
+          ]
+        },
+        "draft_quotation": {
+          "quote_number": "QT-RFP-2026-1105",
+          "issue_date": "2026-11-12",
+          "validity_days": 30,
+          "seller": {
+            "name": "Công ty Cổ phần Công nghệ & Hạ tầng Thiên Minh",
+            "short_name": "Thiên Minh Company",
+            "tax_code": "0315889922",
+            "address": "Tầng 8, Tòa nhà TechHub, Quận 1, TP. Hồ Chí Minh",
+            "hotline": "1900 6889",
+            "email": "sales@thienminhtech.vn"
+          },
+          "buyer": {
+            "name": "Công ty Sản xuất Hòa Bình",
+            "location": "KCN VSIP Bình Dương"
+          },
+          "items": [
+            {
+              "item_id": "ITEM-1",
+              "sku": "TM-SW-CORE-L3-24SFP",
+              "name": "Core Switch 24-Port 10G SFP+ Full Layer 3 Redundant PSU",
+              "category": "Core Switch",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 1,
+              "unit_price_vnd": 145000000,
+              "line_list_total_vnd": 145000000,
+              "line_cost_total_vnd": 112000000
+            },
+            {
+              "item_id": "ITEM-2",
+              "sku": "TM-SW-ACC-POE-48-L3",
+              "name": "Switch Access/Dist 48-Port Gigabit PoE+ 740W Layer 3 Stackable",
+              "category": "Access Switch",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 2,
+              "unit_price_vnd": 68000000,
+              "line_list_total_vnd": 136000000,
+              "line_cost_total_vnd": 104000000
+            },
+            {
+              "item_id": "ITEM-3",
+              "sku": "TM-FW-ENT-5G",
+              "name": "Firewall NGFW Enterprise (IPS 5.5 Gbps, Hỗ trợ HA)",
+              "category": "Firewall",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 1,
+              "unit_price_vnd": 118000000,
+              "line_list_total_vnd": 118000000,
+              "line_cost_total_vnd": 91000000
+            },
+            {
+              "item_id": "ITEM-4",
+              "sku": "TM-AP-WIFI6-PRO",
+              "name": "Access Point Wi-Fi 6 Enterprise Dual-Band 4x4",
+              "category": "Wireless",
+              "is_service": false,
+              "status": "MATCHED",
+              "unit": "Thiết bị",
+              "quantity": 10,
+              "unit_price_vnd": 14500000,
+              "line_list_total_vnd": 145000000,
+              "line_cost_total_vnd": 108000000
+            },
+            {
+              "item_id": "ITEM-5",
+              "sku": "TM-SRV-DEPLOY-LAN",
+              "name": "Dịch vụ khảo sát, lắp đặt, cấu hình mạng LAN/Switch/Wi-Fi (Theo Site/Tầng)",
+              "category": "Deployment Service",
+              "is_service": true,
+              "status": "MATCHED",
+              "unit": "Gói",
+              "quantity": 1,
+              "unit_price_vnd": 28000000,
+              "line_list_total_vnd": 28000000,
+              "line_cost_total_vnd": 16000000
+            },
+            {
+              "item_id": "ITEM-6",
+              "sku": "TM-SRV-DEPLOY-SEC",
+              "name": "Dịch vụ thiết kế & triển khai Bảo mật Firewall HA / SD-WAN",
+              "category": "Deployment Service",
+              "is_service": true,
+              "status": "MATCHED",
+              "unit": "Gói",
+              "quantity": 1,
+              "unit_price_vnd": 35000000,
+              "line_list_total_vnd": 35000000,
+              "line_cost_total_vnd": 19500000
+            },
+            {
+              "item_id": "ITEM-7",
+              "sku": "TM-MNT-24X7-4H",
+              "name": "Gói bảo trì & vận hành cao cấp 24x7 (SLA ứng cứu 4h) / 12 tháng",
+              "category": "Maintenance & SLA",
+              "is_service": true,
+              "status": "MATCHED",
+              "unit": "Gói/Năm",
+              "quantity": 1,
+              "unit_price_vnd": 54000000,
+              "line_list_total_vnd": 54000000,
+              "line_cost_total_vnd": 31000000
+            }
+          ],
+          "summary": {
+            "list_subtotal_vnd": 661000000,
+            "discount_pct": 4.35,
+            "discount_amount_vnd": 28753500,
+            "net_before_vat_vnd": 632246500,
+            "vat_rate_pct": 10.0,
+            "vat_amount_vnd": 63224650,
+            "grand_total_vnd": 695471150
+          },
+          "commercial_terms": [
+            "Thời gian giao hàng & triển khai: 35 ngày.",
+            "Chứng từ kèm theo: Đầy đủ CO/CQ chính hãng từ Nhà sản xuất cho toàn bộ thiết bị.",
+            "Thanh toán: Đợt 1 tạm ứng 40% khi ký HĐ; Đợt 2 thanh toán 40% khi giao hàng; Đợt 3 thanh toán 20% sau nghiệm thu bàn giao.",
+            "Hiệu lực báo giá: 30 ngày kể từ ngày phát hành."
+          ]
+        }
+      },
+      "workflow_trace": [
+        {
+          "step": "RECEIVE",
+          "label": "1. Tiếp nhận yêu cầu chào giá (RFP/RFQ)",
+          "actor": "Hệ thống / Kinh doanh",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Đã tiếp nhận hồ sơ từ Bộ tài liệu kỹ thuật 5 đoạn (Phụ trách: Phạm Quốc Bảo)."
+        },
+        {
+          "step": "EXTRACT",
+          "label": "2. [AI AGENT] Trích xuất & Phân rã yêu cầu",
+          "actor": "AI Agent (Offline Engine)",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Bóc tách được 7 hạng mục, 8 điều kiện bắt buộc. Phân tích bằng Offline NLP & Rule Engine (Hybrid sẵn sàng)."
+        },
+        {
+          "step": "COMPLETENESS_GATE",
+          "label": "3. Cổng kiểm tra: Có đủ thông tin?",
+          "actor": "AI Agent Gatekeeper",
+          "status": "DONE",
+          "decision": "CÓ",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Đạt 100/100 điểm đầy đủ thông tin. Tiếp tục đối chiếu kỹ thuật & vận hành."
+        },
+        {
+          "step": "MATCH_FEASIBILITY",
+          "label": "4. [AI AGENT] Đối chiếu giải pháp, năng lực & lịch triển khai",
+          "actor": "AI Agent + Dữ liệu KT & Vận hành",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Khớp 7 hạng mục; chặn 5 gói giá thấp sai chức năng; ngoài danh mục: Không; lịch triển khai: Khả thi."
+        },
+        {
+          "step": "PRICING",
+          "label": "5. [AI AGENT] Tính toán giá đề xuất & áp dụng chính sách chiết khấu",
+          "actor": "AI Agent Pricing Engine",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Tổng trước VAT: 632.246.500 VND (Chiết khấu 4.35%, Biên LN 23.84%)."
+        },
+        {
+          "step": "AUTHORITY_GATE",
+          "label": "6. Kiểm tra vượt thẩm quyền / Chiết khấu đặc biệt / Ngoài danh mục?",
+          "actor": "AI Agent Policy Gate",
+          "status": "DONE",
+          "decision": "KHÔNG",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Trong thẩm quyền chuẩn — không cần chuyển duyệt vượt cấp."
+        },
+        {
+          "step": "ASSEMBLE_PROPOSAL",
+          "label": "7. Hợp nhất tài liệu: Hồ sơ đề xuất, Ma trận đáp ứng & Dự thảo chào giá",
+          "actor": "AI Agent Document Builder",
+          "status": "DONE",
+          "timestamp": "2026-11-12T13:15:54+07:00",
+          "summary": "Đã tạo Ma trận đáp ứng (16 dòng), Kiểm tra ranh giới 3 phòng ban & Dự thảo báo giá QT-RFP-2026-1105."
+        }
+      ],
+      "hitl": {
+        "escalation_approved": true,
+        "escalation_approver": null,
+        "escalation_comment": null,
+        "dept_signoffs": {
+          "sales": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          },
+          "technical": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          },
+          "operations": {
+            "approved": false,
+            "by": null,
+            "at": null,
+            "note": null
+          }
+        }
+      }
+    }
+  ],
+  "seeded": true
+}
